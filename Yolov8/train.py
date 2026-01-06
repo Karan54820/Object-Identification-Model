@@ -9,7 +9,7 @@ model = YOLO('yolov8m.pt')  # Start with nano for faster initial testing
 
 # Train the model
 results = model.train(
-    data='Dataset/data.yaml',  # Update this path
+    data='../Dataset/data.yaml',  # Update this path
     epochs=100,                   # Number of training epochs
     imgsz=640,                    # Image size
     batch=16,                     # Batch size (adjust based on GPU memory)

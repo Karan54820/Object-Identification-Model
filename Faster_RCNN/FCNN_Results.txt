@@ -1,0 +1,1637 @@
+CUDA Available: True
+GPU Device: NVIDIA H100 NVL
+
+============================================================
+STEP 1: Checking Label Format
+============================================================
+Train labels format: detection
+Validation labels format: detection
+✓ Labels already in detection format!
+
+============================================================
+STEP 2: Setting Up Dataset and Model
+============================================================
+Number of classes: 59
+Class names: ['Aerosol', 'Aluminium blister pack', 'Aluminium foil', 'Battery', 'Broken glass', 'Carded blister pack', 'Cigarette', 'Clear plastic bottle', 'Corrugated carton', 'Crisp packet']...
+
+Train dataset size: 2786
+Val dataset size: 394
+
+Verifying dataset...
+  Sample image shape: torch.Size([3, 640, 640])
+  Sample boxes: 1
+  ✓ Dataset looks good!
+
+============================================================
+STEP 3: Training Faster R-CNN
+============================================================
+
+Epoch 1/100
+  Batch 50/697, Loss: 1.0145
+  Batch 100/697, Loss: 0.7563
+  Batch 150/697, Loss: 1.4216
+  Batch 200/697, Loss: 0.6509
+  Batch 250/697, Loss: 0.7136
+  Batch 300/697, Loss: 0.6475
+  Batch 350/697, Loss: 0.3924
+  Batch 400/697, Loss: 0.4977
+  Batch 450/697, Loss: 0.5619
+  Batch 500/697, Loss: 0.9426
+  Batch 550/697, Loss: 0.9399
+  Batch 600/697, Loss: 0.3075
+  Batch 650/697, Loss: 0.4392
+  Avg Loss: 0.7288
+
+Epoch 2/100
+  Batch 50/697, Loss: 0.3700
+  Batch 100/697, Loss: 0.2534
+  Batch 150/697, Loss: 0.6514
+  Batch 200/697, Loss: 0.2599
+  Batch 250/697, Loss: 0.4924
+  Batch 300/697, Loss: 0.3174
+  Batch 350/697, Loss: 0.2007
+  Batch 400/697, Loss: 0.3672
+  Batch 450/697, Loss: 0.5010
+  Batch 500/697, Loss: 0.5052
+  Batch 550/697, Loss: 0.4734
+  Batch 600/697, Loss: 0.4860
+  Batch 650/697, Loss: 0.4878
+  Avg Loss: 0.5673
+
+Epoch 3/100
+  Batch 50/697, Loss: 0.1811
+  Batch 100/697, Loss: 0.4130
+  Batch 150/697, Loss: 0.4641
+  Batch 200/697, Loss: 0.3517
+  Batch 250/697, Loss: 0.5036
+  Batch 300/697, Loss: 0.4814
+  Batch 350/697, Loss: 0.3741
+  Batch 400/697, Loss: 0.7125
+  Batch 450/697, Loss: 0.3155
+  Batch 500/697, Loss: 0.7326
+  Batch 550/697, Loss: 0.2553
+  Batch 600/697, Loss: 0.3094
+  Batch 650/697, Loss: 0.2593
+  Avg Loss: 0.4851
+
+Epoch 4/100
+  Batch 50/697, Loss: 0.3828
+  Batch 100/697, Loss: 0.4864
+  Batch 150/697, Loss: 0.9785
+  Batch 200/697, Loss: 0.4963
+  Batch 250/697, Loss: 0.2833
+  Batch 300/697, Loss: 1.0255
+  Batch 350/697, Loss: 0.8168
+  Batch 400/697, Loss: 0.6236
+  Batch 450/697, Loss: 0.4073
+  Batch 500/697, Loss: 0.3358
+  Batch 550/697, Loss: 0.4066
+  Batch 600/697, Loss: 0.5919
+  Batch 650/697, Loss: 0.5021
+  Avg Loss: 0.4337
+
+Epoch 5/100
+  Batch 50/697, Loss: 0.2156
+  Batch 100/697, Loss: 0.4678
+  Batch 150/697, Loss: 0.4097
+  Batch 200/697, Loss: 0.2016
+  Batch 250/697, Loss: 0.3228
+  Batch 300/697, Loss: 0.2347
+  Batch 350/697, Loss: 0.6712
+  Batch 400/697, Loss: 0.3967
+  Batch 450/697, Loss: 0.1979
+  Batch 500/697, Loss: 0.3950
+  Batch 550/697, Loss: 0.2864
+  Batch 600/697, Loss: 0.2626
+  Batch 650/697, Loss: 0.3177
+  Avg Loss: 0.3868
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aluminium foil      : AP=0.164 (P=0.60, R=0.27)
+    Cigarette           : AP=0.111 (P=0.41, R=0.27)
+    Clear plastic bottle: AP=0.225 (P=0.57, R=0.39)
+    Corrugated carton   : AP=0.118 (P=0.27, R=0.44)
+    Drink can           : AP=0.291 (P=0.43, R=0.68)
+    Foam food container : AP=0.143 (P=1.00, R=0.14)
+    Food Can            : AP=0.308 (P=0.46, R=0.67)
+    Metal bottle cap    : AP=0.104 (P=0.42, R=0.25)
+    Plastic bottle cap  : AP=0.150 (P=0.52, R=0.29)
+    Plastic straw       : AP=0.322 (P=0.87, R=0.37)
+
+  mAP@0.5: 0.1175
+
+  ✓ Best model saved with mAP@0.5: 0.1175
+
+Epoch 6/100
+  Batch 50/697, Loss: 0.5750
+  Batch 100/697, Loss: 0.3713
+  Batch 150/697, Loss: 0.4463
+  Batch 200/697, Loss: 0.5989
+  Batch 250/697, Loss: 0.3180
+  Batch 300/697, Loss: 0.3689
+  Batch 350/697, Loss: 0.4208
+  Batch 400/697, Loss: 0.4650
+  Batch 450/697, Loss: 0.1885
+  Batch 500/697, Loss: 0.1534
+  Batch 550/697, Loss: 0.2504
+  Batch 600/697, Loss: 0.7954
+  Batch 650/697, Loss: 0.3334
+  Avg Loss: 0.3519
+
+Epoch 7/100
+  Batch 50/697, Loss: 0.1450
+  Batch 100/697, Loss: 0.3292
+  Batch 150/697, Loss: 0.3893
+  Batch 200/697, Loss: 0.1908
+  Batch 250/697, Loss: 0.2670
+  Batch 300/697, Loss: 0.4479
+  Batch 350/697, Loss: 0.1336
+  Batch 400/697, Loss: 0.6631
+  Batch 450/697, Loss: 0.1564
+  Batch 500/697, Loss: 0.5289
+  Batch 550/697, Loss: 0.6565
+  Batch 600/697, Loss: 0.4242
+  Batch 650/697, Loss: 0.5462
+  Avg Loss: 0.3200
+
+Epoch 8/100
+  Batch 50/697, Loss: 0.4748
+  Batch 100/697, Loss: 0.1286
+  Batch 150/697, Loss: 0.2722
+  Batch 200/697, Loss: 0.2148
+  Batch 250/697, Loss: 0.0969
+  Batch 300/697, Loss: 0.5684
+  Batch 350/697, Loss: 0.2873
+  Batch 400/697, Loss: 0.0989
+  Batch 450/697, Loss: 0.3862
+  Batch 500/697, Loss: 0.1768
+  Batch 550/697, Loss: 0.2194
+  Batch 600/697, Loss: 0.6351
+  Batch 650/697, Loss: 0.2461
+  Avg Loss: 0.2852
+
+Epoch 9/100
+  Batch 50/697, Loss: 0.1766
+  Batch 100/697, Loss: 0.1107
+  Batch 150/697, Loss: 0.1681
+  Batch 200/697, Loss: 0.5063
+  Batch 250/697, Loss: 0.0881
+  Batch 300/697, Loss: 0.0990
+  Batch 350/697, Loss: 0.1247
+  Batch 400/697, Loss: 0.1458
+  Batch 450/697, Loss: 0.0976
+  Batch 500/697, Loss: 0.1848
+  Batch 550/697, Loss: 0.2544
+  Batch 600/697, Loss: 0.2717
+  Batch 650/697, Loss: 0.2596
+  Avg Loss: 0.2663
+
+Epoch 10/100
+  Batch 50/697, Loss: 0.2068
+  Batch 100/697, Loss: 0.1544
+  Batch 150/697, Loss: 0.0830
+  Batch 200/697, Loss: 0.3276
+  Batch 250/697, Loss: 0.0855
+  Batch 300/697, Loss: 0.3056
+  Batch 350/697, Loss: 0.3311
+  Batch 400/697, Loss: 0.1731
+  Batch 450/697, Loss: 0.3921
+  Batch 500/697, Loss: 0.3036
+  Batch 550/697, Loss: 0.3720
+  Batch 600/697, Loss: 0.2153
+  Batch 650/697, Loss: 0.2142
+  Avg Loss: 0.2352
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aluminium foil      : AP=0.468 (P=0.86, R=0.55)
+    Broken glass        : AP=0.333 (P=1.00, R=0.33)
+    Cigarette           : AP=0.143 (P=0.59, R=0.24)
+    Clear plastic bottle: AP=0.249 (P=0.55, R=0.45)
+    Corrugated carton   : AP=0.174 (P=0.35, R=0.50)
+    Crisp packet        : AP=0.410 (P=0.62, R=0.67)
+    Disposable plastic c: AP=0.180 (P=0.75, R=0.24)
+    Drink can           : AP=0.415 (P=0.70, R=0.59)
+    Foam cup            : AP=0.200 (P=1.00, R=0.20)
+    Foam food container : AP=0.321 (P=0.75, R=0.43)
+    Food Can            : AP=0.419 (P=0.54, R=0.78)
+    Garbage bag         : AP=0.167 (P=0.50, R=0.33)
+    Glass bottle        : AP=0.126 (P=0.42, R=0.30)
+    Glass jar           : AP=0.500 (P=1.00, R=0.50)
+    Meal carton         : AP=0.111 (P=1.00, R=0.11)
+    Metal bottle cap    : AP=0.200 (P=0.67, R=0.30)
+    Normal paper        : AP=0.130 (P=0.31, R=0.42)
+    Other carton        : AP=0.112 (P=0.36, R=0.31)
+    Paper cup           : AP=0.107 (P=0.43, R=0.25)
+    Plastic bottle cap  : AP=0.222 (P=0.76, R=0.29)
+    Plastic film        : AP=0.120 (P=0.40, R=0.30)
+    Plastic straw       : AP=0.186 (P=0.50, R=0.37)
+    Pop tab             : AP=0.120 (P=0.33, R=0.36)
+    Six pack rings      : AP=0.267 (P=0.67, R=0.40)
+    Tissues             : AP=0.136 (P=0.50, R=0.27)
+
+  mAP@0.5: 0.1752
+
+  ✓ Best model saved with mAP@0.5: 0.1752
+
+Epoch 11/100
+  Batch 50/697, Loss: 0.1976
+  Batch 100/697, Loss: 0.2826
+  Batch 150/697, Loss: 0.1266
+  Batch 200/697, Loss: 0.0773
+  Batch 250/697, Loss: 0.1080
+  Batch 300/697, Loss: 0.1891
+  Batch 350/697, Loss: 0.1614
+  Batch 400/697, Loss: 0.3096
+  Batch 450/697, Loss: 0.0821
+  Batch 500/697, Loss: 0.2856
+  Batch 550/697, Loss: 0.1932
+  Batch 600/697, Loss: 0.2307
+  Batch 650/697, Loss: 0.1047
+  Avg Loss: 0.2194
+
+Epoch 12/100
+  Batch 50/697, Loss: 0.5370
+  Batch 100/697, Loss: 0.2326
+  Batch 150/697, Loss: 0.2434
+  Batch 200/697, Loss: 0.2092
+  Batch 250/697, Loss: 0.1801
+  Batch 300/697, Loss: 0.2286
+  Batch 350/697, Loss: 0.4142
+  Batch 400/697, Loss: 0.1329
+  Batch 450/697, Loss: 0.1649
+  Batch 500/697, Loss: 0.1446
+  Batch 550/697, Loss: 0.1986
+  Batch 600/697, Loss: 0.0899
+  Batch 650/697, Loss: 0.0746
+  Avg Loss: 0.1999
+
+Epoch 13/100
+  Batch 50/697, Loss: 0.1057
+  Batch 100/697, Loss: 0.3793
+  Batch 150/697, Loss: 0.3157
+  Batch 200/697, Loss: 0.0997
+  Batch 250/697, Loss: 0.2378
+  Batch 300/697, Loss: 0.1465
+  Batch 350/697, Loss: 0.1857
+  Batch 400/697, Loss: 0.1312
+  Batch 450/697, Loss: 0.1458
+  Batch 500/697, Loss: 0.3041
+  Batch 550/697, Loss: 0.1467
+  Batch 600/697, Loss: 0.4099
+  Batch 650/697, Loss: 0.2615
+  Avg Loss: 0.1853
+
+Epoch 14/100
+  Batch 50/697, Loss: 0.2278
+  Batch 100/697, Loss: 0.1174
+  Batch 150/697, Loss: 0.2378
+  Batch 200/697, Loss: 0.1696
+  Batch 250/697, Loss: 0.0728
+  Batch 300/697, Loss: 0.1716
+  Batch 350/697, Loss: 0.5742
+  Batch 400/697, Loss: 0.0966
+  Batch 450/697, Loss: 0.2689
+  Batch 500/697, Loss: 0.1204
+  Batch 550/697, Loss: 0.1007
+  Batch 600/697, Loss: 0.2488
+  Batch 650/697, Loss: 0.1325
+  Avg Loss: 0.1839
+
+Epoch 15/100
+  Batch 50/697, Loss: 0.0611
+  Batch 100/697, Loss: 0.2077
+  Batch 150/697, Loss: 0.0976
+  Batch 200/697, Loss: 0.1979
+  Batch 250/697, Loss: 0.1516
+  Batch 300/697, Loss: 0.2913
+  Batch 350/697, Loss: 0.0493
+  Batch 400/697, Loss: 0.1271
+  Batch 450/697, Loss: 0.2007
+  Batch 500/697, Loss: 0.2163
+  Batch 550/697, Loss: 0.1566
+  Batch 600/697, Loss: 0.0621
+  Batch 650/697, Loss: 0.0959
+  Avg Loss: 0.1700
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.162 (P=0.44, R=0.36)
+    Broken glass        : AP=0.167 (P=0.50, R=0.33)
+    Cigarette           : AP=0.134 (P=0.45, R=0.30)
+    Clear plastic bottle: AP=0.325 (P=0.80, R=0.41)
+    Corrugated carton   : AP=0.236 (P=0.54, R=0.44)
+    Crisp packet        : AP=0.314 (P=0.54, R=0.58)
+    Disposable food cont: AP=0.132 (P=0.75, R=0.18)
+    Disposable plastic c: AP=0.202 (P=0.56, R=0.36)
+    Drink can           : AP=0.346 (P=0.47, R=0.74)
+    Foam cup            : AP=0.200 (P=1.00, R=0.20)
+    Foam food container : AP=0.429 (P=1.00, R=0.43)
+    Food Can            : AP=0.347 (P=0.62, R=0.56)
+    Garbage bag         : AP=0.222 (P=0.50, R=0.44)
+    Glass bottle        : AP=0.159 (P=0.48, R=0.33)
+    Glass jar           : AP=0.500 (P=1.00, R=0.50)
+    Meal carton         : AP=0.356 (P=0.80, R=0.44)
+    Metal bottle cap    : AP=0.104 (P=0.42, R=0.25)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Normal paper        : AP=0.169 (P=0.45, R=0.38)
+    Other carton        : AP=0.205 (P=0.44, R=0.46)
+    Other plastic contai: AP=0.176 (P=0.57, R=0.31)
+    Paper bag           : AP=0.333 (P=1.00, R=0.33)
+    Paper cup           : AP=0.188 (P=0.75, R=0.25)
+    Plastic bottle cap  : AP=0.206 (P=0.54, R=0.38)
+    Plastic film        : AP=0.158 (P=0.36, R=0.43)
+    Plastic straw       : AP=0.147 (P=0.43, R=0.34)
+    Pop tab             : AP=0.205 (P=0.39, R=0.52)
+    Single-use carrier b: AP=0.107 (P=0.38, R=0.28)
+    Six pack rings      : AP=0.357 (P=0.71, R=0.50)
+    Styrofoam piece     : AP=0.107 (P=0.29, R=0.37)
+    Toilet tube         : AP=0.600 (P=1.00, R=0.60)
+
+  mAP@0.5: 0.2230
+
+  ✓ Best model saved with mAP@0.5: 0.2230
+
+Epoch 16/100
+  Batch 50/697, Loss: 0.1720
+  Batch 100/697, Loss: 0.2340
+  Batch 150/697, Loss: 0.1180
+  Batch 200/697, Loss: 0.0572
+  Batch 250/697, Loss: 0.1462
+  Batch 300/697, Loss: 0.1122
+  Batch 350/697, Loss: 0.1608
+  Batch 400/697, Loss: 0.0943
+  Batch 450/697, Loss: 0.1772
+  Batch 500/697, Loss: 0.1731
+  Batch 550/697, Loss: 0.1460
+  Batch 600/697, Loss: 0.1549
+  Batch 650/697, Loss: 0.1317
+  Avg Loss: 0.1756
+
+Epoch 17/100
+  Batch 50/697, Loss: 0.3006
+  Batch 100/697, Loss: 0.1341
+  Batch 150/697, Loss: 0.0899
+  Batch 200/697, Loss: 0.2138
+  Batch 250/697, Loss: 0.1436
+  Batch 300/697, Loss: 0.0604
+  Batch 350/697, Loss: 0.1219
+  Batch 400/697, Loss: 0.1885
+  Batch 450/697, Loss: 0.0906
+  Batch 500/697, Loss: 0.1319
+  Batch 550/697, Loss: 0.1002
+  Batch 600/697, Loss: 0.0685
+  Batch 650/697, Loss: 0.0712
+  Avg Loss: 0.1710
+
+Epoch 18/100
+  Batch 50/697, Loss: 0.3080
+  Batch 100/697, Loss: 0.1301
+  Batch 150/697, Loss: 0.2075
+  Batch 200/697, Loss: 0.1592
+  Batch 250/697, Loss: 0.2410
+  Batch 300/697, Loss: 0.1116
+  Batch 350/697, Loss: 0.0922
+  Batch 400/697, Loss: 0.2988
+  Batch 450/697, Loss: 0.1814
+  Batch 500/697, Loss: 0.1028
+  Batch 550/697, Loss: 0.1532
+  Batch 600/697, Loss: 0.1434
+  Batch 650/697, Loss: 0.2982
+  Avg Loss: 0.1856
+
+Epoch 19/100
+  Batch 50/697, Loss: 0.1845
+  Batch 100/697, Loss: 0.0465
+  Batch 150/697, Loss: 0.1027
+  Batch 200/697, Loss: 0.1315
+  Batch 250/697, Loss: 0.1816
+  Batch 300/697, Loss: 0.1203
+  Batch 350/697, Loss: 0.1468
+  Batch 400/697, Loss: 0.2354
+  Batch 450/697, Loss: 0.1553
+  Batch 500/697, Loss: 0.2615
+  Batch 550/697, Loss: 0.2465
+  Batch 600/697, Loss: 0.2390
+  Batch 650/697, Loss: 0.2373
+  Avg Loss: 0.1601
+
+Epoch 20/100
+  Batch 50/697, Loss: 0.2156
+  Batch 100/697, Loss: 0.2362
+  Batch 150/697, Loss: 0.3954
+  Batch 200/697, Loss: 0.2252
+  Batch 250/697, Loss: 0.3940
+  Batch 300/697, Loss: 0.1305
+  Batch 350/697, Loss: 0.1633
+  Batch 400/697, Loss: 0.0828
+  Batch 450/697, Loss: 0.2320
+  Batch 500/697, Loss: 0.0851
+  Batch 550/697, Loss: 0.0814
+  Batch 600/697, Loss: 0.2648
+  Batch 650/697, Loss: 0.1226
+  Avg Loss: 0.1744
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=0.500 (P=0.50, R=1.00)
+    Aluminium foil      : AP=0.364 (P=1.00, R=0.36)
+    Cigarette           : AP=0.104 (P=0.35, R=0.30)
+    Clear plastic bottle: AP=0.258 (P=0.48, R=0.54)
+    Corrugated carton   : AP=0.118 (P=0.24, R=0.50)
+    Crisp packet        : AP=0.174 (P=0.42, R=0.42)
+    Disposable food cont: AP=0.134 (P=0.57, R=0.24)
+    Disposable plastic c: AP=0.107 (P=0.33, R=0.32)
+    Drink can           : AP=0.464 (P=0.64, R=0.73)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam cup            : AP=0.200 (P=1.00, R=0.20)
+    Foam food container : AP=0.381 (P=0.67, R=0.57)
+    Food Can            : AP=0.419 (P=0.54, R=0.78)
+    Garbage bag         : AP=0.222 (P=1.00, R=0.22)
+    Glass bottle        : AP=0.105 (P=0.27, R=0.39)
+    Glass jar           : AP=1.000 (P=1.00, R=1.00)
+    Meal carton         : AP=0.556 (P=1.00, R=0.56)
+    Metal bottle cap    : AP=0.139 (P=0.56, R=0.25)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Normal paper        : AP=0.130 (P=0.35, R=0.38)
+    Other plastic contai: AP=0.231 (P=0.50, R=0.46)
+    Other plastic       : AP=0.130 (P=0.65, R=0.20)
+    Paper bag           : AP=0.333 (P=1.00, R=0.33)
+    Paper cup           : AP=0.130 (P=0.31, R=0.42)
+    Plastic bottle cap  : AP=0.186 (P=0.49, R=0.38)
+    Plastic film        : AP=0.128 (P=0.36, R=0.36)
+    Plastic straw       : AP=0.122 (P=0.30, R=0.40)
+    Plastic utensils    : AP=0.214 (P=1.00, R=0.21)
+    Pop tab             : AP=0.103 (P=0.37, R=0.28)
+    Single-use carrier b: AP=0.155 (P=0.31, R=0.50)
+    Six pack rings      : AP=0.417 (P=0.83, R=0.50)
+    Toilet tube         : AP=0.600 (P=1.00, R=0.60)
+
+  mAP@0.5: 0.2296
+
+  ✓ Best model saved with mAP@0.5: 0.2296
+
+Epoch 21/100
+  Batch 50/697, Loss: 0.1490
+  Batch 100/697, Loss: 0.0557
+  Batch 150/697, Loss: 0.1677
+  Batch 200/697, Loss: 0.1244
+  Batch 250/697, Loss: 0.1127
+  Batch 300/697, Loss: 0.2260
+  Batch 350/697, Loss: 0.0759
+  Batch 400/697, Loss: 0.2573
+  Batch 450/697, Loss: 0.0891
+  Batch 500/697, Loss: 0.0669
+  Batch 550/697, Loss: 0.1886
+  Batch 600/697, Loss: 0.1759
+  Batch 650/697, Loss: 0.2318
+  Avg Loss: 0.1507
+
+Epoch 22/100
+  Batch 50/697, Loss: 0.1956
+  Batch 100/697, Loss: 0.1235
+  Batch 150/697, Loss: 0.0844
+  Batch 200/697, Loss: 0.1337
+  Batch 250/697, Loss: 0.0682
+  Batch 300/697, Loss: 0.0905
+  Batch 350/697, Loss: 0.1587
+  Batch 400/697, Loss: 0.1112
+  Batch 450/697, Loss: 0.3360
+  Batch 500/697, Loss: 0.1460
+  Batch 550/697, Loss: 0.0676
+  Batch 600/697, Loss: 0.2540
+  Batch 650/697, Loss: 0.1875
+  Avg Loss: 0.1363
+
+Epoch 23/100
+  Batch 50/697, Loss: 0.1476
+  Batch 100/697, Loss: 0.0939
+  Batch 150/697, Loss: 0.0353
+  Batch 200/697, Loss: 0.1202
+  Batch 250/697, Loss: 0.1664
+  Batch 300/697, Loss: 0.1374
+  Batch 350/697, Loss: 0.0577
+  Batch 400/697, Loss: 0.0964
+  Batch 450/697, Loss: 0.0899
+  Batch 500/697, Loss: 0.0953
+  Batch 550/697, Loss: 0.1968
+  Batch 600/697, Loss: 0.3155
+  Batch 650/697, Loss: 0.2092
+  Avg Loss: 0.1353
+
+Epoch 24/100
+  Batch 50/697, Loss: 0.0668
+  Batch 100/697, Loss: 0.1198
+  Batch 150/697, Loss: 0.0614
+  Batch 200/697, Loss: 0.0427
+  Batch 250/697, Loss: 0.2036
+  Batch 300/697, Loss: 0.0823
+  Batch 350/697, Loss: 0.1040
+  Batch 400/697, Loss: 0.1423
+  Batch 450/697, Loss: 0.2914
+  Batch 500/697, Loss: 0.1139
+  Batch 550/697, Loss: 0.3036
+  Batch 600/697, Loss: 0.0493
+  Batch 650/697, Loss: 0.1319
+  Avg Loss: 0.1340
+
+Epoch 25/100
+  Batch 50/697, Loss: 0.0694
+  Batch 100/697, Loss: 0.1713
+  Batch 150/697, Loss: 0.0753
+  Batch 200/697, Loss: 0.1207
+  Batch 250/697, Loss: 0.1726
+  Batch 300/697, Loss: 0.2324
+  Batch 350/697, Loss: 0.1493
+  Batch 400/697, Loss: 0.1662
+  Batch 450/697, Loss: 0.3439
+  Batch 500/697, Loss: 0.2319
+  Batch 550/697, Loss: 0.0710
+  Batch 600/697, Loss: 0.1038
+  Batch 650/697, Loss: 0.0705
+  Avg Loss: 0.1402
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.379 (P=0.83, R=0.45)
+    Cigarette           : AP=0.136 (P=0.41, R=0.33)
+    Clear plastic bottle: AP=0.311 (P=0.61, R=0.51)
+    Corrugated carton   : AP=0.255 (P=0.58, R=0.44)
+    Crisp packet        : AP=0.417 (P=0.50, R=0.83)
+    Disposable food cont: AP=0.288 (P=0.70, R=0.41)
+    Disposable plastic c: AP=0.222 (P=0.56, R=0.40)
+    Drink can           : AP=0.452 (P=0.71, R=0.64)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam cup            : AP=0.200 (P=1.00, R=0.20)
+    Foam food container : AP=0.429 (P=1.00, R=0.43)
+    Food Can            : AP=0.547 (P=0.62, R=0.89)
+    Garbage bag         : AP=0.125 (P=0.38, R=0.33)
+    Glass jar           : AP=1.000 (P=1.00, R=1.00)
+    Meal carton         : AP=0.111 (P=0.50, R=0.22)
+    Metal bottle cap    : AP=0.150 (P=0.50, R=0.30)
+    Metal lid           : AP=0.125 (P=0.25, R=0.50)
+    Normal paper        : AP=0.205 (P=0.62, R=0.33)
+    Other carton        : AP=0.111 (P=0.41, R=0.27)
+    Other plastic contai: AP=0.246 (P=0.80, R=0.31)
+    Other plastic       : AP=0.138 (P=0.36, R=0.39)
+    Paper cup           : AP=0.188 (P=0.75, R=0.25)
+    Plastic bottle cap  : AP=0.236 (P=0.72, R=0.33)
+    Plastic film        : AP=0.225 (P=0.49, R=0.46)
+    Plastic straw       : AP=0.181 (P=0.45, R=0.40)
+    Plastic utensils    : AP=0.143 (P=1.00, R=0.14)
+    Pop tab             : AP=0.160 (P=0.50, R=0.32)
+    Single-use carrier b: AP=0.170 (P=0.44, R=0.39)
+    Six pack rings      : AP=0.600 (P=1.00, R=0.60)
+    Toilet tube         : AP=0.600 (P=1.00, R=0.60)
+
+  mAP@0.5: 0.2455
+
+  ✓ Best model saved with mAP@0.5: 0.2455
+
+Epoch 26/100
+  Batch 50/697, Loss: 0.1417
+  Batch 100/697, Loss: 0.1893
+  Batch 150/697, Loss: 0.0386
+  Batch 200/697, Loss: 0.0353
+  Batch 250/697, Loss: 0.2159
+  Batch 300/697, Loss: 0.2311
+  Batch 350/697, Loss: 0.1020
+  Batch 400/697, Loss: 0.0648
+  Batch 450/697, Loss: 0.1416
+  Batch 500/697, Loss: 0.0658
+  Batch 550/697, Loss: 0.0587
+  Batch 600/697, Loss: 0.0886
+  Batch 650/697, Loss: 0.0719
+  Avg Loss: 0.1359
+
+Epoch 27/100
+  Batch 50/697, Loss: 0.1461
+  Batch 100/697, Loss: 0.1394
+  Batch 150/697, Loss: 0.1155
+  Batch 200/697, Loss: 0.2461
+  Batch 250/697, Loss: 0.1737
+  Batch 300/697, Loss: 0.2431
+  Batch 350/697, Loss: 0.0667
+  Batch 400/697, Loss: 0.0779
+  Batch 450/697, Loss: 0.0288
+  Batch 500/697, Loss: 0.1042
+  Batch 550/697, Loss: 0.1535
+  Batch 600/697, Loss: 0.0871
+  Batch 650/697, Loss: 0.2693
+  Avg Loss: 0.1404
+
+Epoch 28/100
+  Batch 50/697, Loss: 0.1765
+  Batch 100/697, Loss: 0.1286
+  Batch 150/697, Loss: 0.1361
+  Batch 200/697, Loss: 0.1393
+  Batch 250/697, Loss: 0.1149
+  Batch 300/697, Loss: 0.1101
+  Batch 350/697, Loss: 0.0477
+  Batch 400/697, Loss: 0.1317
+  Batch 450/697, Loss: 0.0675
+  Batch 500/697, Loss: 0.0560
+  Batch 550/697, Loss: 0.1399
+  Batch 600/697, Loss: 0.1531
+  Batch 650/697, Loss: 0.1437
+  Avg Loss: 0.1476
+
+Epoch 29/100
+  Batch 50/697, Loss: 0.0732
+  Batch 100/697, Loss: 0.1755
+  Batch 150/697, Loss: 0.0517
+  Batch 200/697, Loss: 0.2656
+  Batch 250/697, Loss: 0.1947
+  Batch 300/697, Loss: 0.0902
+  Batch 350/697, Loss: 0.2592
+  Batch 400/697, Loss: 0.3449
+  Batch 450/697, Loss: 0.2983
+  Batch 500/697, Loss: 0.4147
+  Batch 550/697, Loss: 0.0956
+  Batch 600/697, Loss: 0.1286
+  Batch 650/697, Loss: 0.0927
+  Avg Loss: 0.1414
+
+Epoch 30/100
+  Batch 50/697, Loss: 0.2168
+  Batch 100/697, Loss: 0.1291
+  Batch 150/697, Loss: 0.2076
+  Batch 200/697, Loss: 0.1877
+  Batch 250/697, Loss: 0.1345
+  Batch 300/697, Loss: 0.1801
+  Batch 350/697, Loss: 0.2619
+  Batch 400/697, Loss: 0.1964
+  Batch 450/697, Loss: 0.2772
+  Batch 500/697, Loss: 0.1444
+  Batch 550/697, Loss: 0.2164
+  Batch 600/697, Loss: 0.2057
+  Batch 650/697, Loss: 0.2058
+  Avg Loss: 0.1886
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.379 (P=0.83, R=0.45)
+    Broken glass        : AP=0.167 (P=1.00, R=0.17)
+    Cigarette           : AP=0.130 (P=0.48, R=0.27)
+    Clear plastic bottle: AP=0.309 (P=0.67, R=0.46)
+    Corrugated carton   : AP=0.154 (P=0.31, R=0.50)
+    Crisp packet        : AP=0.371 (P=0.64, R=0.58)
+    Disposable food cont: AP=0.147 (P=0.50, R=0.29)
+    Disposable plastic c: AP=0.180 (P=0.38, R=0.48)
+    Drink can           : AP=0.361 (P=0.64, R=0.57)
+    Foam food container : AP=0.257 (P=0.60, R=0.43)
+    Food Can            : AP=0.454 (P=0.58, R=0.78)
+    Garbage bag         : AP=0.222 (P=1.00, R=0.22)
+    Glass bottle        : AP=0.136 (P=0.50, R=0.27)
+    Glass jar           : AP=0.500 (P=1.00, R=0.50)
+    Meal carton         : AP=0.111 (P=0.25, R=0.44)
+    Metal bottle cap    : AP=0.156 (P=0.62, R=0.25)
+    Metal lid           : AP=0.500 (P=1.00, R=0.50)
+    Normal paper        : AP=0.188 (P=0.75, R=0.25)
+    Other plastic contai: AP=0.138 (P=0.60, R=0.23)
+    Plastic bottle cap  : AP=0.148 (P=0.41, R=0.36)
+    Plastic film        : AP=0.172 (P=0.40, R=0.43)
+    Six pack rings      : AP=0.400 (P=1.00, R=0.40)
+    Tissues             : AP=0.205 (P=0.75, R=0.27)
+
+  mAP@0.5: 0.1862
+
+
+Epoch 31/100
+  Batch 50/697, Loss: 0.0493
+  Batch 100/697, Loss: 0.2106
+  Batch 150/697, Loss: 0.0556
+  Batch 200/697, Loss: 0.1162
+  Batch 250/697, Loss: 0.0785
+  Batch 300/697, Loss: 0.0271
+  Batch 350/697, Loss: 0.0474
+  Batch 400/697, Loss: 0.0294
+  Batch 450/697, Loss: 0.2724
+  Batch 500/697, Loss: 0.0848
+  Batch 550/697, Loss: 0.1296
+  Batch 600/697, Loss: 0.0728
+  Batch 650/697, Loss: 0.3162
+  Avg Loss: 0.1104
+
+Epoch 32/100
+  Batch 50/697, Loss: 0.0547
+  Batch 100/697, Loss: 0.0465
+  Batch 150/697, Loss: 0.1557
+  Batch 200/697, Loss: 0.0890
+  Batch 250/697, Loss: 0.0432
+  Batch 300/697, Loss: 0.0817
+  Batch 350/697, Loss: 0.0642
+  Batch 400/697, Loss: 0.0837
+  Batch 450/697, Loss: 0.0713
+  Batch 500/697, Loss: 0.0557
+  Batch 550/697, Loss: 0.0530
+  Batch 600/697, Loss: 0.0384
+  Batch 650/697, Loss: 0.1897
+  Avg Loss: 0.0884
+
+Epoch 33/100
+  Batch 50/697, Loss: 0.0319
+  Batch 100/697, Loss: 0.0995
+  Batch 150/697, Loss: 0.0264
+  Batch 200/697, Loss: 0.0642
+  Batch 250/697, Loss: 0.1165
+  Batch 300/697, Loss: 0.1036
+  Batch 350/697, Loss: 0.0537
+  Batch 400/697, Loss: 0.1200
+  Batch 450/697, Loss: 0.0842
+  Batch 500/697, Loss: 0.0304
+  Batch 550/697, Loss: 0.0502
+  Batch 600/697, Loss: 0.0830
+  Batch 650/697, Loss: 0.0351
+  Avg Loss: 0.0805
+
+Epoch 34/100
+  Batch 50/697, Loss: 0.0357
+  Batch 100/697, Loss: 0.0262
+  Batch 150/697, Loss: 0.0627
+  Batch 200/697, Loss: 0.0372
+  Batch 250/697, Loss: 0.0229
+  Batch 300/697, Loss: 0.0616
+  Batch 350/697, Loss: 0.1487
+  Batch 400/697, Loss: 0.0557
+  Batch 450/697, Loss: 0.0418
+  Batch 500/697, Loss: 0.0791
+  Batch 550/697, Loss: 0.0203
+  Batch 600/697, Loss: 0.0225
+  Batch 650/697, Loss: 0.0601
+  Avg Loss: 0.0755
+
+Epoch 35/100
+  Batch 50/697, Loss: 0.1289
+  Batch 100/697, Loss: 0.0826
+  Batch 150/697, Loss: 0.0174
+  Batch 200/697, Loss: 0.0300
+  Batch 250/697, Loss: 0.0792
+  Batch 300/697, Loss: 0.1120
+  Batch 350/697, Loss: 0.0534
+  Batch 400/697, Loss: 0.0711
+  Batch 450/697, Loss: 0.0351
+  Batch 500/697, Loss: 0.0494
+  Batch 550/697, Loss: 0.1875
+  Batch 600/697, Loss: 0.0596
+  Batch 650/697, Loss: 0.0880
+  Avg Loss: 0.0718
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.455 (P=1.00, R=0.45)
+    Broken glass        : AP=0.222 (P=0.67, R=0.33)
+    Cigarette           : AP=0.161 (P=0.54, R=0.30)
+    Clear plastic bottle: AP=0.265 (P=0.52, R=0.51)
+    Corrugated carton   : AP=0.286 (P=0.57, R=0.50)
+    Crisp packet        : AP=0.463 (P=0.56, R=0.83)
+    Disposable food cont: AP=0.206 (P=0.50, R=0.41)
+    Disposable plastic c: AP=0.200 (P=0.50, R=0.40)
+    Drink can           : AP=0.476 (P=0.70, R=0.68)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam cup            : AP=0.200 (P=1.00, R=0.20)
+    Foam food container : AP=0.429 (P=1.00, R=0.43)
+    Food Can            : AP=0.454 (P=0.58, R=0.78)
+    Food waste          : AP=0.500 (P=1.00, R=0.50)
+    Garbage bag         : AP=0.444 (P=1.00, R=0.44)
+    Glass bottle        : AP=0.190 (P=0.48, R=0.39)
+    Glass jar           : AP=1.000 (P=1.00, R=1.00)
+    Meal carton         : AP=0.556 (P=1.00, R=0.56)
+    Metal bottle cap    : AP=0.179 (P=0.71, R=0.25)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Other carton        : AP=0.231 (P=0.50, R=0.46)
+    Other plastic contai: AP=0.275 (P=0.71, R=0.38)
+    Other plastic       : AP=0.124 (P=0.42, R=0.29)
+    Paper bag           : AP=0.333 (P=1.00, R=0.33)
+    Paper cup           : AP=0.148 (P=0.44, R=0.33)
+    Plastic bottle cap  : AP=0.193 (P=0.56, R=0.35)
+    Plastic film        : AP=0.222 (P=0.54, R=0.41)
+    Plastic straw       : AP=0.161 (P=0.43, R=0.37)
+    Plastic utensils    : AP=0.214 (P=1.00, R=0.21)
+    Pop tab             : AP=0.140 (P=0.50, R=0.28)
+    Single-use carrier b: AP=0.151 (P=0.39, R=0.39)
+    Six pack rings      : AP=0.544 (P=0.78, R=0.70)
+    Styrofoam piece     : AP=0.129 (P=0.35, R=0.37)
+    Tissues             : AP=0.182 (P=1.00, R=0.18)
+    Toilet tube         : AP=0.800 (P=1.00, R=0.80)
+
+  mAP@0.5: 0.2848
+
+  ✓ Best model saved with mAP@0.5: 0.2848
+
+Epoch 36/100
+  Batch 50/697, Loss: 0.0514
+  Batch 100/697, Loss: 0.1662
+  Batch 150/697, Loss: 0.0886
+  Batch 200/697, Loss: 0.0310
+  Batch 250/697, Loss: 0.0627
+  Batch 300/697, Loss: 0.0256
+  Batch 350/697, Loss: 0.0159
+  Batch 400/697, Loss: 0.0657
+  Batch 450/697, Loss: 0.0606
+  Batch 500/697, Loss: 0.0388
+  Batch 550/697, Loss: 0.0367
+  Batch 600/697, Loss: 0.1268
+  Batch 650/697, Loss: 0.0596
+  Avg Loss: 0.0687
+
+Epoch 37/100
+  Batch 50/697, Loss: 0.3271
+  Batch 100/697, Loss: 0.0322
+  Batch 150/697, Loss: 0.0626
+  Batch 200/697, Loss: 0.0583
+  Batch 250/697, Loss: 0.0426
+  Batch 300/697, Loss: 0.0251
+  Batch 350/697, Loss: 0.2088
+  Batch 400/697, Loss: 0.0871
+  Batch 450/697, Loss: 0.0387
+  Batch 500/697, Loss: 0.0773
+  Batch 550/697, Loss: 0.0809
+  Batch 600/697, Loss: 0.0380
+  Batch 650/697, Loss: 0.0856
+  Avg Loss: 0.0663
+
+Epoch 38/100
+  Batch 50/697, Loss: 0.0839
+  Batch 100/697, Loss: 0.0690
+  Batch 150/697, Loss: 0.1092
+  Batch 200/697, Loss: 0.0994
+  Batch 250/697, Loss: 0.0608
+  Batch 300/697, Loss: 0.0640
+  Batch 350/697, Loss: 0.0613
+  Batch 400/697, Loss: 0.0497
+  Batch 450/697, Loss: 0.0220
+  Batch 500/697, Loss: 0.0485
+  Batch 550/697, Loss: 0.1629
+  Batch 600/697, Loss: 0.0246
+  Batch 650/697, Loss: 0.0362
+  Avg Loss: 0.0641
+
+Epoch 39/100
+  Batch 50/697, Loss: 0.1360
+  Batch 100/697, Loss: 0.0657
+  Batch 150/697, Loss: 0.0163
+  Batch 200/697, Loss: 0.2208
+  Batch 250/697, Loss: 0.0574
+  Batch 300/697, Loss: 0.0366
+  Batch 350/697, Loss: 0.0238
+  Batch 400/697, Loss: 0.0261
+  Batch 450/697, Loss: 0.0346
+  Batch 500/697, Loss: 0.1484
+  Batch 550/697, Loss: 0.0240
+  Batch 600/697, Loss: 0.0558
+  Batch 650/697, Loss: 0.0552
+  Avg Loss: 0.0624
+
+Epoch 40/100
+  Batch 50/697, Loss: 0.0682
+  Batch 100/697, Loss: 0.0730
+  Batch 150/697, Loss: 0.0359
+  Batch 200/697, Loss: 0.0263
+  Batch 250/697, Loss: 0.0945
+  Batch 300/697, Loss: 0.0948
+  Batch 350/697, Loss: 0.0222
+  Batch 400/697, Loss: 0.0623
+  Batch 450/697, Loss: 0.0371
+  Batch 500/697, Loss: 0.1209
+  Batch 550/697, Loss: 0.0508
+  Batch 600/697, Loss: 0.0832
+  Batch 650/697, Loss: 0.1366
+  Avg Loss: 0.0608
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.379 (P=0.83, R=0.45)
+    Broken glass        : AP=0.167 (P=0.50, R=0.33)
+    Cigarette           : AP=0.170 (P=0.55, R=0.31)
+    Clear plastic bottle: AP=0.268 (P=0.50, R=0.54)
+    Corrugated carton   : AP=0.278 (P=0.64, R=0.44)
+    Crisp packet        : AP=0.490 (P=0.59, R=0.83)
+    Disposable food cont: AP=0.288 (P=0.70, R=0.41)
+    Disposable plastic c: AP=0.242 (P=0.55, R=0.44)
+    Drink can           : AP=0.531 (P=0.71, R=0.74)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam food container : AP=0.429 (P=1.00, R=0.43)
+    Food Can            : AP=0.419 (P=0.54, R=0.78)
+    Food waste          : AP=0.500 (P=1.00, R=0.50)
+    Garbage bag         : AP=0.444 (P=1.00, R=0.44)
+    Glass bottle        : AP=0.160 (P=0.41, R=0.39)
+    Glass jar           : AP=1.000 (P=1.00, R=1.00)
+    Meal carton         : AP=0.556 (P=1.00, R=0.56)
+    Metal bottle cap    : AP=0.225 (P=0.75, R=0.30)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Other carton        : AP=0.179 (P=0.42, R=0.42)
+    Other plastic contai: AP=0.175 (P=0.45, R=0.38)
+    Other plastic       : AP=0.126 (P=0.41, R=0.31)
+    Paper bag           : AP=0.222 (P=0.67, R=0.33)
+    Paper cup           : AP=0.133 (P=0.40, R=0.33)
+    Plastic bottle cap  : AP=0.208 (P=0.57, R=0.36)
+    Plastic film        : AP=0.226 (P=0.56, R=0.40)
+    Plastic straw       : AP=0.151 (P=0.41, R=0.37)
+    Plastic utensils    : AP=0.214 (P=1.00, R=0.21)
+    Pop tab             : AP=0.197 (P=0.62, R=0.32)
+    Single-use carrier b: AP=0.198 (P=0.44, R=0.44)
+    Six pack rings      : AP=0.612 (P=0.88, R=0.70)
+    Styrofoam piece     : AP=0.143 (P=0.39, R=0.37)
+    Tissues             : AP=0.182 (P=1.00, R=0.18)
+    Toilet tube         : AP=0.800 (P=1.00, R=0.80)
+
+  mAP@0.5: 0.2824
+
+
+Epoch 41/100
+  Batch 50/697, Loss: 0.0756
+  Batch 100/697, Loss: 0.0381
+  Batch 150/697, Loss: 0.1122
+  Batch 200/697, Loss: 0.1046
+  Batch 250/697, Loss: 0.0489
+  Batch 300/697, Loss: 0.0433
+  Batch 350/697, Loss: 0.0565
+  Batch 400/697, Loss: 0.0586
+  Batch 450/697, Loss: 0.1308
+  Batch 500/697, Loss: 0.0423
+  Batch 550/697, Loss: 0.0492
+  Batch 600/697, Loss: 0.1674
+  Batch 650/697, Loss: 0.0386
+  Avg Loss: 0.0598
+
+Epoch 42/100
+  Batch 50/697, Loss: 0.0586
+  Batch 100/697, Loss: 0.0205
+  Batch 150/697, Loss: 0.0450
+  Batch 200/697, Loss: 0.0427
+  Batch 250/697, Loss: 0.0282
+  Batch 300/697, Loss: 0.0154
+  Batch 350/697, Loss: 0.0470
+  Batch 400/697, Loss: 0.0656
+  Batch 450/697, Loss: 0.0453
+  Batch 500/697, Loss: 0.1162
+  Batch 550/697, Loss: 0.0416
+  Batch 600/697, Loss: 0.0211
+  Batch 650/697, Loss: 0.0442
+  Avg Loss: 0.0583
+
+Epoch 43/100
+  Batch 50/697, Loss: 0.1023
+  Batch 100/697, Loss: 0.1556
+  Batch 150/697, Loss: 0.0658
+  Batch 200/697, Loss: 0.0463
+  Batch 250/697, Loss: 0.0555
+  Batch 300/697, Loss: 0.0155
+  Batch 350/697, Loss: 0.0255
+  Batch 400/697, Loss: 0.0224
+  Batch 450/697, Loss: 0.0590
+  Batch 500/697, Loss: 0.0374
+  Batch 550/697, Loss: 0.0357
+  Batch 600/697, Loss: 0.0577
+  Batch 650/697, Loss: 0.0207
+  Avg Loss: 0.0572
+
+Epoch 44/100
+  Batch 50/697, Loss: 0.0172
+  Batch 100/697, Loss: 0.0176
+  Batch 150/697, Loss: 0.0903
+  Batch 200/697, Loss: 0.0096
+  Batch 250/697, Loss: 0.1429
+  Batch 300/697, Loss: 0.0474
+  Batch 350/697, Loss: 0.0426
+  Batch 400/697, Loss: 0.0229
+  Batch 450/697, Loss: 0.0326
+  Batch 500/697, Loss: 0.0305
+  Batch 550/697, Loss: 0.0179
+  Batch 600/697, Loss: 0.0801
+  Batch 650/697, Loss: 0.0868
+  Avg Loss: 0.0565
+
+Epoch 45/100
+  Batch 50/697, Loss: 0.0363
+  Batch 100/697, Loss: 0.0452
+  Batch 150/697, Loss: 0.0193
+  Batch 200/697, Loss: 0.0869
+  Batch 250/697, Loss: 0.0579
+  Batch 300/697, Loss: 0.1672
+  Batch 350/697, Loss: 0.0138
+  Batch 400/697, Loss: 0.0311
+  Batch 450/697, Loss: 0.0568
+  Batch 500/697, Loss: 0.0515
+  Batch 550/697, Loss: 0.0344
+  Batch 600/697, Loss: 0.0922
+  Batch 650/697, Loss: 0.0165
+  Avg Loss: 0.0556
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.325 (P=0.71, R=0.45)
+    Broken glass        : AP=0.222 (P=0.67, R=0.33)
+    Cigarette           : AP=0.179 (P=0.60, R=0.30)
+    Clear plastic bottle: AP=0.299 (P=0.54, R=0.55)
+    Corrugated carton   : AP=0.225 (P=0.60, R=0.38)
+    Crisp packet        : AP=0.463 (P=0.56, R=0.83)
+    Disposable food cont: AP=0.288 (P=0.70, R=0.41)
+    Disposable plastic c: AP=0.242 (P=0.55, R=0.44)
+    Drink can           : AP=0.538 (P=0.72, R=0.74)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam food container : AP=0.429 (P=1.00, R=0.43)
+    Food Can            : AP=0.495 (P=0.64, R=0.78)
+    Food waste          : AP=0.500 (P=1.00, R=0.50)
+    Garbage bag         : AP=0.463 (P=0.83, R=0.56)
+    Glass bottle        : AP=0.162 (P=0.44, R=0.36)
+    Glass jar           : AP=1.000 (P=1.00, R=1.00)
+    Meal carton         : AP=0.347 (P=0.62, R=0.56)
+    Metal bottle cap    : AP=0.200 (P=0.67, R=0.30)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Normal paper        : AP=0.120 (P=0.41, R=0.29)
+    Other carton        : AP=0.202 (P=0.48, R=0.42)
+    Other plastic contai: AP=0.160 (P=0.42, R=0.38)
+    Other plastic       : AP=0.131 (P=0.43, R=0.31)
+    Paper bag           : AP=0.222 (P=0.67, R=0.33)
+    Paper cup           : AP=0.189 (P=0.45, R=0.42)
+    Plastic bottle cap  : AP=0.159 (P=0.49, R=0.33)
+    Plastic film        : AP=0.218 (P=0.55, R=0.40)
+    Plastic straw       : AP=0.170 (P=0.42, R=0.40)
+    Plastic utensils    : AP=0.161 (P=0.75, R=0.21)
+    Pop tab             : AP=0.233 (P=0.73, R=0.32)
+    Single-use carrier b: AP=0.187 (P=0.42, R=0.44)
+    Six pack rings      : AP=0.612 (P=0.88, R=0.70)
+    Styrofoam piece     : AP=0.129 (P=0.35, R=0.37)
+    Tissues             : AP=0.182 (P=1.00, R=0.18)
+    Toilet tube         : AP=0.800 (P=1.00, R=0.80)
+
+  mAP@0.5: 0.2858
+
+  ✓ Best model saved with mAP@0.5: 0.2858
+
+Epoch 46/100
+  Batch 50/697, Loss: 0.0782
+  Batch 100/697, Loss: 0.0207
+  Batch 150/697, Loss: 0.1013
+  Batch 200/697, Loss: 0.1896
+  Batch 250/697, Loss: 0.0217
+  Batch 300/697, Loss: 0.0847
+  Batch 350/697, Loss: 0.0315
+  Batch 400/697, Loss: 0.0202
+  Batch 450/697, Loss: 0.0202
+  Batch 500/697, Loss: 0.0273
+  Batch 550/697, Loss: 0.0420
+  Batch 600/697, Loss: 0.2101
+  Batch 650/697, Loss: 0.0164
+  Avg Loss: 0.0548
+
+Epoch 47/100
+  Batch 50/697, Loss: 0.1803
+  Batch 100/697, Loss: 0.0574
+  Batch 150/697, Loss: 0.0437
+  Batch 200/697, Loss: 0.0376
+  Batch 250/697, Loss: 0.0562
+  Batch 300/697, Loss: 0.0186
+  Batch 350/697, Loss: 0.1530
+  Batch 400/697, Loss: 0.0864
+  Batch 450/697, Loss: 0.0905
+  Batch 500/697, Loss: 0.0212
+  Batch 550/697, Loss: 0.0666
+  Batch 600/697, Loss: 0.0482
+  Batch 650/697, Loss: 0.2546
+  Avg Loss: 0.0541
+
+Epoch 48/100
+  Batch 50/697, Loss: 0.0219
+  Batch 100/697, Loss: 0.0437
+  Batch 150/697, Loss: 0.0301
+  Batch 200/697, Loss: 0.0125
+  Batch 250/697, Loss: 0.0246
+  Batch 300/697, Loss: 0.0339
+  Batch 350/697, Loss: 0.0641
+  Batch 400/697, Loss: 0.0216
+  Batch 450/697, Loss: 0.0532
+  Batch 500/697, Loss: 0.0284
+  Batch 550/697, Loss: 0.0113
+  Batch 600/697, Loss: 0.0205
+  Batch 650/697, Loss: 0.0566
+  Avg Loss: 0.0530
+
+Epoch 49/100
+  Batch 50/697, Loss: 0.1134
+  Batch 100/697, Loss: 0.0250
+  Batch 150/697, Loss: 0.0168
+  Batch 200/697, Loss: 0.0536
+  Batch 250/697, Loss: 0.0254
+  Batch 300/697, Loss: 0.0534
+  Batch 350/697, Loss: 0.0324
+  Batch 400/697, Loss: 0.0790
+  Batch 450/697, Loss: 0.0185
+  Batch 500/697, Loss: 0.1555
+  Batch 550/697, Loss: 0.0487
+  Batch 600/697, Loss: 0.0201
+  Batch 650/697, Loss: 0.0350
+  Avg Loss: 0.0524
+
+Epoch 50/100
+  Batch 50/697, Loss: 0.0620
+  Batch 100/697, Loss: 0.0229
+  Batch 150/697, Loss: 0.0220
+  Batch 200/697, Loss: 0.0263
+  Batch 250/697, Loss: 0.0396
+  Batch 300/697, Loss: 0.0744
+  Batch 350/697, Loss: 0.0303
+  Batch 400/697, Loss: 0.0684
+  Batch 450/697, Loss: 0.0717
+  Batch 500/697, Loss: 0.1202
+  Batch 550/697, Loss: 0.0616
+  Batch 600/697, Loss: 0.0941
+  Batch 650/697, Loss: 0.0473
+  Avg Loss: 0.0521
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.325 (P=0.71, R=0.45)
+    Broken glass        : AP=0.167 (P=0.50, R=0.33)
+    Cigarette           : AP=0.177 (P=0.58, R=0.31)
+    Clear plastic bottle: AP=0.295 (P=0.54, R=0.55)
+    Corrugated carton   : AP=0.255 (P=0.58, R=0.44)
+    Crisp packet        : AP=0.463 (P=0.56, R=0.83)
+    Disposable food cont: AP=0.288 (P=0.70, R=0.41)
+    Disposable plastic c: AP=0.200 (P=0.50, R=0.40)
+    Drink can           : AP=0.517 (P=0.70, R=0.74)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam food container : AP=0.321 (P=0.75, R=0.43)
+    Food Can            : AP=0.454 (P=0.58, R=0.78)
+    Food waste          : AP=0.500 (P=1.00, R=0.50)
+    Garbage bag         : AP=0.556 (P=1.00, R=0.56)
+    Glass bottle        : AP=0.156 (P=0.43, R=0.36)
+    Glass jar           : AP=1.000 (P=1.00, R=1.00)
+    Meal carton         : AP=0.347 (P=0.62, R=0.56)
+    Metal bottle cap    : AP=0.200 (P=0.67, R=0.30)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Other carton        : AP=0.186 (P=0.44, R=0.42)
+    Other plastic contai: AP=0.175 (P=0.45, R=0.38)
+    Other plastic       : AP=0.124 (P=0.40, R=0.31)
+    Paper bag           : AP=0.333 (P=1.00, R=0.33)
+    Paper cup           : AP=0.133 (P=0.40, R=0.33)
+    Plastic bottle cap  : AP=0.182 (P=0.50, R=0.36)
+    Plastic film        : AP=0.226 (P=0.56, R=0.40)
+    Plastic straw       : AP=0.175 (P=0.44, R=0.40)
+    Plastic utensils    : AP=0.161 (P=0.75, R=0.21)
+    Pop tab             : AP=0.196 (P=0.70, R=0.28)
+    Single-use carrier b: AP=0.187 (P=0.42, R=0.44)
+    Six pack rings      : AP=0.544 (P=0.78, R=0.70)
+    Styrofoam piece     : AP=0.136 (P=0.37, R=0.37)
+    Tissues             : AP=0.273 (P=1.00, R=0.27)
+    Toilet tube         : AP=0.800 (P=1.00, R=0.80)
+
+  mAP@0.5: 0.2764
+
+
+Epoch 51/100
+  Batch 50/697, Loss: 0.0389
+  Batch 100/697, Loss: 0.0388
+  Batch 150/697, Loss: 0.1753
+  Batch 200/697, Loss: 0.0208
+  Batch 250/697, Loss: 0.0229
+  Batch 300/697, Loss: 0.1012
+  Batch 350/697, Loss: 0.0181
+  Batch 400/697, Loss: 0.1347
+  Batch 450/697, Loss: 0.0422
+  Batch 500/697, Loss: 0.0244
+  Batch 550/697, Loss: 0.0126
+  Batch 600/697, Loss: 0.0643
+  Batch 650/697, Loss: 0.0187
+  Avg Loss: 0.0515
+
+Epoch 52/100
+  Batch 50/697, Loss: 0.0755
+  Batch 100/697, Loss: 0.0371
+  Batch 150/697, Loss: 0.0660
+  Batch 200/697, Loss: 0.0307
+  Batch 250/697, Loss: 0.0447
+  Batch 300/697, Loss: 0.0319
+  Batch 350/697, Loss: 0.0195
+  Batch 400/697, Loss: 0.1531
+  Batch 450/697, Loss: 0.0202
+  Batch 500/697, Loss: 0.0657
+  Batch 550/697, Loss: 0.0273
+  Batch 600/697, Loss: 0.0348
+  Batch 650/697, Loss: 0.0331
+  Avg Loss: 0.0507
+
+Epoch 53/100
+  Batch 50/697, Loss: 0.1788
+  Batch 100/697, Loss: 0.0137
+  Batch 150/697, Loss: 0.1614
+  Batch 200/697, Loss: 0.0126
+  Batch 250/697, Loss: 0.0414
+  Batch 300/697, Loss: 0.0195
+  Batch 350/697, Loss: 0.2330
+  Batch 400/697, Loss: 0.0283
+  Batch 450/697, Loss: 0.0324
+  Batch 500/697, Loss: 0.0443
+  Batch 550/697, Loss: 0.0266
+  Batch 600/697, Loss: 0.0483
+  Batch 650/697, Loss: 0.0387
+  Avg Loss: 0.0502
+
+Epoch 54/100
+  Batch 50/697, Loss: 0.0500
+  Batch 100/697, Loss: 0.0127
+  Batch 150/697, Loss: 0.1442
+  Batch 200/697, Loss: 0.0770
+  Batch 250/697, Loss: 0.0190
+  Batch 300/697, Loss: 0.0190
+  Batch 350/697, Loss: 0.0242
+  Batch 400/697, Loss: 0.0104
+  Batch 450/697, Loss: 0.0543
+  Batch 500/697, Loss: 0.0356
+  Batch 550/697, Loss: 0.2451
+  Batch 600/697, Loss: 0.0293
+  Batch 650/697, Loss: 0.0353
+  Avg Loss: 0.0499
+
+Epoch 55/100
+  Batch 50/697, Loss: 0.1885
+  Batch 100/697, Loss: 0.0272
+  Batch 150/697, Loss: 0.0346
+  Batch 200/697, Loss: 0.0208
+  Batch 250/697, Loss: 0.0783
+  Batch 300/697, Loss: 0.0896
+  Batch 350/697, Loss: 0.0452
+  Batch 400/697, Loss: 0.0388
+  Batch 450/697, Loss: 0.0276
+  Batch 500/697, Loss: 0.0395
+  Batch 550/697, Loss: 0.1252
+  Batch 600/697, Loss: 0.0281
+  Batch 650/697, Loss: 0.0638
+  Avg Loss: 0.0494
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.325 (P=0.71, R=0.45)
+    Broken glass        : AP=0.222 (P=0.67, R=0.33)
+    Cigarette           : AP=0.180 (P=0.59, R=0.30)
+    Clear plastic bottle: AP=0.305 (P=0.57, R=0.54)
+    Corrugated carton   : AP=0.278 (P=0.64, R=0.44)
+    Crisp packet        : AP=0.463 (P=0.56, R=0.83)
+    Disposable food cont: AP=0.262 (P=0.64, R=0.41)
+    Disposable plastic c: AP=0.230 (P=0.52, R=0.44)
+    Drink can           : AP=0.511 (P=0.69, R=0.74)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam food container : AP=0.321 (P=0.75, R=0.43)
+    Food Can            : AP=0.454 (P=0.58, R=0.78)
+    Food waste          : AP=0.500 (P=1.00, R=0.50)
+    Garbage bag         : AP=0.556 (P=1.00, R=0.56)
+    Glass bottle        : AP=0.177 (P=0.45, R=0.39)
+    Glass jar           : AP=0.667 (P=0.67, R=1.00)
+    Meal carton         : AP=0.347 (P=0.62, R=0.56)
+    Metal bottle cap    : AP=0.180 (P=0.60, R=0.30)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Other carton        : AP=0.241 (P=0.48, R=0.50)
+    Other plastic contai: AP=0.192 (P=0.50, R=0.38)
+    Other plastic       : AP=0.122 (P=0.40, R=0.31)
+    Paper bag           : AP=0.333 (P=1.00, R=0.33)
+    Paper cup           : AP=0.208 (P=0.50, R=0.42)
+    Plastic bottle cap  : AP=0.206 (P=0.54, R=0.38)
+    Plastic film        : AP=0.211 (P=0.53, R=0.40)
+    Plastic straw       : AP=0.181 (P=0.45, R=0.40)
+    Plastic utensils    : AP=0.161 (P=0.75, R=0.21)
+    Pop tab             : AP=0.178 (P=0.64, R=0.28)
+    Single-use carrier b: AP=0.198 (P=0.44, R=0.44)
+    Six pack rings      : AP=0.544 (P=0.78, R=0.70)
+    Styrofoam piece     : AP=0.136 (P=0.37, R=0.37)
+    Tissues             : AP=0.273 (P=1.00, R=0.27)
+    Toilet tube         : AP=0.800 (P=1.00, R=0.80)
+
+  mAP@0.5: 0.2742
+
+
+Epoch 56/100
+  Batch 50/697, Loss: 0.0180
+  Batch 100/697, Loss: 0.0284
+  Batch 150/697, Loss: 0.0079
+  Batch 200/697, Loss: 0.0547
+  Batch 250/697, Loss: 0.0553
+  Batch 300/697, Loss: 0.0186
+  Batch 350/697, Loss: 0.0256
+  Batch 400/697, Loss: 0.0389
+  Batch 450/697, Loss: 0.0552
+  Batch 500/697, Loss: 0.0597
+  Batch 550/697, Loss: 0.0232
+  Batch 600/697, Loss: 0.1437
+  Batch 650/697, Loss: 0.0226
+  Avg Loss: 0.0490
+
+Epoch 57/100
+  Batch 50/697, Loss: 0.1160
+  Batch 100/697, Loss: 0.0432
+  Batch 150/697, Loss: 0.0891
+  Batch 200/697, Loss: 0.0806
+  Batch 250/697, Loss: 0.0228
+  Batch 300/697, Loss: 0.0258
+  Batch 350/697, Loss: 0.0605
+  Batch 400/697, Loss: 0.0683
+  Batch 450/697, Loss: 0.0371
+  Batch 500/697, Loss: 0.0356
+  Batch 550/697, Loss: 0.0307
+  Batch 600/697, Loss: 0.0271
+  Batch 650/697, Loss: 0.0783
+  Avg Loss: 0.0484
+
+Epoch 58/100
+  Batch 50/697, Loss: 0.0477
+  Batch 100/697, Loss: 0.1750
+  Batch 150/697, Loss: 0.0255
+  Batch 200/697, Loss: 0.0420
+  Batch 250/697, Loss: 0.1287
+  Batch 300/697, Loss: 0.0133
+  Batch 350/697, Loss: 0.1768
+  Batch 400/697, Loss: 0.0249
+  Batch 450/697, Loss: 0.0881
+  Batch 500/697, Loss: 0.0578
+  Batch 550/697, Loss: 0.2021
+  Batch 600/697, Loss: 0.0189
+  Batch 650/697, Loss: 0.0540
+  Avg Loss: 0.0483
+
+Epoch 59/100
+  Batch 50/697, Loss: 0.0417
+  Batch 100/697, Loss: 0.0810
+  Batch 150/697, Loss: 0.0231
+  Batch 200/697, Loss: 0.0228
+  Batch 250/697, Loss: 0.1713
+  Batch 300/697, Loss: 0.0214
+  Batch 350/697, Loss: 0.0256
+  Batch 400/697, Loss: 0.0357
+  Batch 450/697, Loss: 0.0217
+  Batch 500/697, Loss: 0.0561
+  Batch 550/697, Loss: 0.1809
+  Batch 600/697, Loss: 0.0258
+  Batch 650/697, Loss: 0.0524
+  Avg Loss: 0.0478
+
+Epoch 60/100
+  Batch 50/697, Loss: 0.0353
+  Batch 100/697, Loss: 0.0117
+  Batch 150/697, Loss: 0.0316
+  Batch 200/697, Loss: 0.0224
+  Batch 250/697, Loss: 0.1279
+  Batch 300/697, Loss: 0.0558
+  Batch 350/697, Loss: 0.0254
+  Batch 400/697, Loss: 0.0256
+  Batch 450/697, Loss: 0.0209
+  Batch 500/697, Loss: 0.0346
+  Batch 550/697, Loss: 0.0261
+  Batch 600/697, Loss: 0.0718
+  Batch 650/697, Loss: 0.0273
+  Avg Loss: 0.0476
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.379 (P=0.83, R=0.45)
+    Broken glass        : AP=0.167 (P=0.50, R=0.33)
+    Cigarette           : AP=0.177 (P=0.58, R=0.31)
+    Clear plastic bottle: AP=0.287 (P=0.52, R=0.55)
+    Corrugated carton   : AP=0.205 (P=0.55, R=0.38)
+    Crisp packet        : AP=0.397 (P=0.53, R=0.75)
+    Disposable food cont: AP=0.376 (P=0.80, R=0.47)
+    Disposable plastic c: AP=0.242 (P=0.55, R=0.44)
+    Drink can           : AP=0.512 (P=0.70, R=0.73)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam food container : AP=0.321 (P=0.75, R=0.43)
+    Food Can            : AP=0.495 (P=0.64, R=0.78)
+    Food waste          : AP=0.250 (P=0.50, R=0.50)
+    Garbage bag         : AP=0.463 (P=0.83, R=0.56)
+    Glass bottle        : AP=0.165 (P=0.42, R=0.39)
+    Glass jar           : AP=0.667 (P=0.67, R=1.00)
+    Meal carton         : AP=0.347 (P=0.62, R=0.56)
+    Metal bottle cap    : AP=0.180 (P=0.60, R=0.30)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Other carton        : AP=0.213 (P=0.46, R=0.46)
+    Other plastic contai: AP=0.160 (P=0.42, R=0.38)
+    Other plastic       : AP=0.124 (P=0.40, R=0.31)
+    Paper bag           : AP=0.333 (P=1.00, R=0.33)
+    Paper cup           : AP=0.189 (P=0.45, R=0.42)
+    Plastic bottle cap  : AP=0.205 (P=0.51, R=0.40)
+    Plastic film        : AP=0.206 (P=0.52, R=0.40)
+    Plastic straw       : AP=0.151 (P=0.41, R=0.37)
+    Plastic utensils    : AP=0.161 (P=0.75, R=0.21)
+    Pop tab             : AP=0.144 (P=0.60, R=0.24)
+    Single-use carrier b: AP=0.187 (P=0.42, R=0.44)
+    Six pack rings      : AP=0.544 (P=0.78, R=0.70)
+    Styrofoam piece     : AP=0.129 (P=0.35, R=0.37)
+    Tissues             : AP=0.273 (P=1.00, R=0.27)
+    Toilet tube         : AP=0.800 (P=1.00, R=0.80)
+
+  mAP@0.5: 0.2684
+
+
+Epoch 61/100
+  Batch 50/697, Loss: 0.0170
+  Batch 100/697, Loss: 0.1238
+  Batch 150/697, Loss: 0.0128
+  Batch 200/697, Loss: 0.0193
+  Batch 250/697, Loss: 0.0177
+  Batch 300/697, Loss: 0.0179
+  Batch 350/697, Loss: 0.0381
+  Batch 400/697, Loss: 0.1177
+  Batch 450/697, Loss: 0.0418
+  Batch 500/697, Loss: 0.0446
+  Batch 550/697, Loss: 0.0307
+  Batch 600/697, Loss: 0.0305
+  Batch 650/697, Loss: 0.0830
+  Avg Loss: 0.0465
+
+Epoch 62/100
+  Batch 50/697, Loss: 0.0296
+  Batch 100/697, Loss: 0.0565
+  Batch 150/697, Loss: 0.0222
+  Batch 200/697, Loss: 0.0127
+  Batch 250/697, Loss: 0.0342
+  Batch 300/697, Loss: 0.0356
+  Batch 350/697, Loss: 0.0770
+  Batch 400/697, Loss: 0.0531
+  Batch 450/697, Loss: 0.0418
+  Batch 500/697, Loss: 0.0445
+  Batch 550/697, Loss: 0.0423
+  Batch 600/697, Loss: 0.1590
+  Batch 650/697, Loss: 0.0165
+  Avg Loss: 0.0462
+
+Epoch 63/100
+  Batch 50/697, Loss: 0.0185
+  Batch 100/697, Loss: 0.0205
+  Batch 150/697, Loss: 0.0454
+  Batch 200/697, Loss: 0.0680
+  Batch 250/697, Loss: 0.1067
+  Batch 300/697, Loss: 0.0272
+  Batch 350/697, Loss: 0.0234
+  Batch 400/697, Loss: 0.0355
+  Batch 450/697, Loss: 0.0602
+  Batch 500/697, Loss: 0.0708
+  Batch 550/697, Loss: 0.1778
+  Batch 600/697, Loss: 0.1116
+  Batch 650/697, Loss: 0.0197
+  Avg Loss: 0.0456
+
+Epoch 64/100
+  Batch 50/697, Loss: 0.0749
+  Batch 100/697, Loss: 0.0154
+  Batch 150/697, Loss: 0.0207
+  Batch 200/697, Loss: 0.0789
+  Batch 250/697, Loss: 0.0430
+  Batch 300/697, Loss: 0.0554
+  Batch 350/697, Loss: 0.0534
+  Batch 400/697, Loss: 0.0485
+  Batch 450/697, Loss: 0.0303
+  Batch 500/697, Loss: 0.0270
+  Batch 550/697, Loss: 0.0605
+  Batch 600/697, Loss: 0.1386
+  Batch 650/697, Loss: 0.0114
+  Avg Loss: 0.0461
+
+Epoch 65/100
+  Batch 50/697, Loss: 0.0196
+  Batch 100/697, Loss: 0.0513
+  Batch 150/697, Loss: 0.0363
+  Batch 200/697, Loss: 0.0165
+  Batch 250/697, Loss: 0.0091
+  Batch 300/697, Loss: 0.1269
+  Batch 350/697, Loss: 0.0364
+  Batch 400/697, Loss: 0.0347
+  Batch 450/697, Loss: 0.0297
+  Batch 500/697, Loss: 0.0513
+  Batch 550/697, Loss: 0.0242
+  Batch 600/697, Loss: 0.0337
+  Batch 650/697, Loss: 0.0250
+  Avg Loss: 0.0457
+
+  Validating...
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.379 (P=0.83, R=0.45)
+    Broken glass        : AP=0.167 (P=0.50, R=0.33)
+    Cigarette           : AP=0.179 (P=0.58, R=0.31)
+    Clear plastic bottle: AP=0.291 (P=0.53, R=0.55)
+    Corrugated carton   : AP=0.225 (P=0.60, R=0.38)
+    Crisp packet        : AP=0.397 (P=0.53, R=0.75)
+    Disposable food cont: AP=0.342 (P=0.73, R=0.47)
+    Disposable plastic c: AP=0.242 (P=0.55, R=0.44)
+    Drink can           : AP=0.499 (P=0.68, R=0.73)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam food container : AP=0.429 (P=1.00, R=0.43)
+    Food Can            : AP=0.454 (P=0.58, R=0.78)
+    Food waste          : AP=0.250 (P=0.50, R=0.50)
+    Garbage bag         : AP=0.463 (P=0.83, R=0.56)
+    Glass bottle        : AP=0.171 (P=0.43, R=0.39)
+    Glass jar           : AP=0.667 (P=0.67, R=1.00)
+    Meal carton         : AP=0.347 (P=0.62, R=0.56)
+    Metal bottle cap    : AP=0.180 (P=0.60, R=0.30)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Other carton        : AP=0.250 (P=0.50, R=0.50)
+    Other plastic contai: AP=0.175 (P=0.45, R=0.38)
+    Other plastic       : AP=0.126 (P=0.39, R=0.32)
+    Paper bag           : AP=0.333 (P=1.00, R=0.33)
+    Paper cup           : AP=0.189 (P=0.45, R=0.42)
+    Plastic bottle cap  : AP=0.200 (P=0.53, R=0.38)
+    Plastic film        : AP=0.206 (P=0.52, R=0.40)
+    Plastic straw       : AP=0.161 (P=0.43, R=0.37)
+    Plastic utensils    : AP=0.161 (P=0.75, R=0.21)
+    Pop tab             : AP=0.111 (P=0.56, R=0.20)
+    Single-use carrier b: AP=0.178 (P=0.40, R=0.44)
+    Six pack rings      : AP=0.612 (P=0.88, R=0.70)
+    Styrofoam piece     : AP=0.123 (P=0.33, R=0.37)
+    Tissues             : AP=0.273 (P=1.00, R=0.27)
+    Toilet tube         : AP=0.800 (P=1.00, R=0.80)
+
+  mAP@0.5: 0.2712
+
+
+Early stopping triggered after 65 epochs
+
+============================================================
+STEP 4: Final Evaluation
+============================================================
+  Running inference on validation set...
+
+  Per-Class Performance:
+    Aerosol             : AP=1.000 (P=1.00, R=1.00)
+    Aluminium foil      : AP=0.379 (P=0.83, R=0.45)
+    Broken glass        : AP=0.167 (P=0.50, R=0.33)
+    Cigarette           : AP=0.179 (P=0.58, R=0.31)
+    Clear plastic bottle: AP=0.291 (P=0.53, R=0.55)
+    Corrugated carton   : AP=0.225 (P=0.60, R=0.38)
+    Crisp packet        : AP=0.397 (P=0.53, R=0.75)
+    Disposable food cont: AP=0.342 (P=0.73, R=0.47)
+    Disposable plastic c: AP=0.242 (P=0.55, R=0.44)
+    Drink can           : AP=0.499 (P=0.68, R=0.73)
+    Egg carton          : AP=0.500 (P=1.00, R=0.50)
+    Foam food container : AP=0.429 (P=1.00, R=0.43)
+    Food Can            : AP=0.454 (P=0.58, R=0.78)
+    Food waste          : AP=0.250 (P=0.50, R=0.50)
+    Garbage bag         : AP=0.463 (P=0.83, R=0.56)
+    Glass bottle        : AP=0.171 (P=0.43, R=0.39)
+    Glass jar           : AP=0.667 (P=0.67, R=1.00)
+    Meal carton         : AP=0.347 (P=0.62, R=0.56)
+    Metal bottle cap    : AP=0.180 (P=0.60, R=0.30)
+    Metal lid           : AP=0.250 (P=0.50, R=0.50)
+    Other carton        : AP=0.250 (P=0.50, R=0.50)
+    Other plastic contai: AP=0.175 (P=0.45, R=0.38)
+    Other plastic       : AP=0.126 (P=0.39, R=0.32)
+    Paper bag           : AP=0.333 (P=1.00, R=0.33)
+    Paper cup           : AP=0.189 (P=0.45, R=0.42)
+    Plastic bottle cap  : AP=0.200 (P=0.53, R=0.38)
+    Plastic film        : AP=0.206 (P=0.52, R=0.40)
+    Plastic straw       : AP=0.161 (P=0.43, R=0.37)
+    Plastic utensils    : AP=0.161 (P=0.75, R=0.21)
+    Pop tab             : AP=0.111 (P=0.56, R=0.20)
+    Single-use carrier b: AP=0.178 (P=0.40, R=0.44)
+    Six pack rings      : AP=0.612 (P=0.88, R=0.70)
+    Styrofoam piece     : AP=0.123 (P=0.33, R=0.37)
+    Tissues             : AP=0.273 (P=1.00, R=0.27)
+    Toilet tube         : AP=0.800 (P=1.00, R=0.80)
+
+============================================================
+TRAINING COMPLETE
+============================================================
+Best mAP@0.5:  0.2858
+Final mAP@0.5: 0.2712
+
+Model Comparison:
+  YOLOv8m:       mAP@0.5 = 0.4720
+  Faster R-CNN:  mAP@0.5 = 0.2712
+  Improvement:   -42.3%
+
+Models saved in: faster_rcnn_models/
+============================================================
