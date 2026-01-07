@@ -1,0 +1,919 @@
+CUDA Available: True
+GPU Device: NVIDIA H100 NVL
+PyTorch version: 2.5.1+cu121
+Torchvision version: 0.20.1+cu121
+
+Number of classes: 59
+
+Train: 2786, Val: 394
+
+Creating RetinaNet model...
+✓ Model created successfully!
+
+============================================================
+Training RetinaNet
+============================================================
+
+Epoch 1/100
+  Batch 50/697, Loss: 1.4845
+  Batch 100/697, Loss: 1.6154
+  Batch 150/697, Loss: 1.4273
+  Batch 200/697, Loss: 1.6257
+  Batch 250/697, Loss: 1.7298
+  Batch 300/697, Loss: 1.4115
+  Batch 350/697, Loss: 1.4718
+  Batch 400/697, Loss: 1.3557
+  Batch 450/697, Loss: 1.5524
+  Batch 500/697, Loss: 1.3444
+  Batch 550/697, Loss: 1.2661
+  Batch 600/697, Loss: 1.3515
+  Batch 650/697, Loss: 1.4738
+  Avg Loss: 1.4443
+
+Epoch 2/100
+  Batch 50/697, Loss: 1.1532
+  Batch 100/697, Loss: 0.9446
+  Batch 150/697, Loss: 1.2207
+  Batch 200/697, Loss: 1.3379
+  Batch 250/697, Loss: 0.9356
+  Batch 300/697, Loss: 1.0461
+  Batch 350/697, Loss: 1.0267
+  Batch 400/697, Loss: 1.3295
+  Batch 450/697, Loss: 1.3750
+  Batch 500/697, Loss: 1.0426
+  Batch 550/697, Loss: 1.1440
+  Batch 600/697, Loss: 1.5649
+  Batch 650/697, Loss: 0.9799
+  Avg Loss: 1.1094
+
+Epoch 3/100
+  Batch 50/697, Loss: 0.7708
+  Batch 100/697, Loss: 1.0651
+  Batch 150/697, Loss: 0.7432
+  Batch 200/697, Loss: 0.9744
+  Batch 250/697, Loss: 1.1220
+  Batch 300/697, Loss: 0.8527
+  Batch 350/697, Loss: 1.3307
+  Batch 400/697, Loss: 1.5646
+  Batch 450/697, Loss: 1.4429
+  Batch 500/697, Loss: 1.0132
+  Batch 550/697, Loss: 0.8928
+  Batch 600/697, Loss: 0.7555
+  Batch 650/697, Loss: 0.8848
+  Avg Loss: 0.9961
+
+Epoch 4/100
+  Batch 50/697, Loss: 0.7611
+  Batch 100/697, Loss: 1.1961
+  Batch 150/697, Loss: 0.8787
+  Batch 200/697, Loss: 0.8673
+  Batch 250/697, Loss: 0.9100
+  Batch 300/697, Loss: 0.9100
+  Batch 350/697, Loss: 0.6411
+  Batch 400/697, Loss: 0.7503
+  Batch 450/697, Loss: 0.8978
+  Batch 500/697, Loss: 0.8792
+  Batch 550/697, Loss: 0.8718
+  Batch 600/697, Loss: 0.9768
+  Batch 650/697, Loss: 0.9681
+  Avg Loss: 0.9380
+
+Epoch 5/100
+  Batch 50/697, Loss: 0.9885
+  Batch 100/697, Loss: 1.0228
+  Batch 150/697, Loss: 0.9131
+  Batch 200/697, Loss: 0.9331
+  Batch 250/697, Loss: 0.9542
+  Batch 300/697, Loss: 0.7765
+  Batch 350/697, Loss: 0.7941
+  Batch 400/697, Loss: 1.1559
+  Batch 450/697, Loss: 0.7372
+  Batch 500/697, Loss: 0.7627
+  Batch 550/697, Loss: 0.6078
+  Batch 600/697, Loss: 0.8232
+  Batch 650/697, Loss: 0.6962
+  Avg Loss: 0.8963
+
+Epoch 6/100
+  Batch 50/697, Loss: 0.9935
+  Batch 100/697, Loss: 0.9300
+  Batch 150/697, Loss: 1.0712
+  Batch 200/697, Loss: 0.9645
+  Batch 250/697, Loss: 0.7494
+  Batch 300/697, Loss: 0.9965
+  Batch 350/697, Loss: 0.7490
+  Batch 400/697, Loss: 0.6366
+  Batch 450/697, Loss: 0.5835
+  Batch 500/697, Loss: 0.6674
+  Batch 550/697, Loss: 1.3345
+  Batch 600/697, Loss: 1.1866
+  Batch 650/697, Loss: 0.8510
+  Avg Loss: 0.8656
+
+Epoch 7/100
+  Batch 50/697, Loss: 0.7693
+  Batch 100/697, Loss: 0.6625
+  Batch 150/697, Loss: 0.9503
+  Batch 200/697, Loss: 0.8051
+  Batch 250/697, Loss: 0.6625
+  Batch 300/697, Loss: 0.8089
+  Batch 350/697, Loss: 0.9436
+  Batch 400/697, Loss: 0.6864
+  Batch 450/697, Loss: 0.7504
+  Batch 500/697, Loss: 0.8752
+  Batch 550/697, Loss: 0.7963
+  Batch 600/697, Loss: 1.0955
+  Batch 650/697, Loss: 0.7359
+  Avg Loss: 0.8325
+
+Epoch 8/100
+  Batch 50/697, Loss: 0.8974
+  Batch 100/697, Loss: 0.7972
+  Batch 150/697, Loss: 1.0543
+  Batch 200/697, Loss: 0.8436
+  Batch 250/697, Loss: 0.6556
+  Batch 300/697, Loss: 0.7375
+  Batch 350/697, Loss: 0.6999
+  Batch 400/697, Loss: 0.7478
+  Batch 450/697, Loss: 0.7299
+  Batch 500/697, Loss: 0.8848
+  Batch 550/697, Loss: 0.8400
+  Batch 600/697, Loss: 0.6359
+  Batch 650/697, Loss: 0.5717
+  Avg Loss: 0.8095
+
+Epoch 9/100
+  Batch 50/697, Loss: 1.0624
+  Batch 100/697, Loss: 0.7197
+  Batch 150/697, Loss: 0.7523
+  Batch 200/697, Loss: 0.7944
+  Batch 250/697, Loss: 0.9225
+  Batch 300/697, Loss: 0.7582
+  Batch 350/697, Loss: 0.7652
+  Batch 400/697, Loss: 0.8664
+  Batch 450/697, Loss: 0.8953
+  Batch 500/697, Loss: 0.6810
+  Batch 550/697, Loss: 0.9321
+  Batch 600/697, Loss: 0.9484
+  Batch 650/697, Loss: 0.9707
+  Avg Loss: 0.7868
+
+Epoch 10/100
+  Batch 50/697, Loss: 0.7545
+  Batch 100/697, Loss: 1.3160
+  Batch 150/697, Loss: 0.8113
+  Batch 200/697, Loss: 1.0159
+  Batch 250/697, Loss: 0.9440
+  Batch 300/697, Loss: 0.8880
+  Batch 350/697, Loss: 1.0209
+  Batch 400/697, Loss: 0.6607
+  Batch 450/697, Loss: 0.8333
+  Batch 500/697, Loss: 0.6120
+  Batch 550/697, Loss: 1.0125
+  Batch 600/697, Loss: 0.9269
+  Batch 650/697, Loss: 0.8623
+  Avg Loss: 0.7648
+
+  Validating...
+  Running inference...
+
+  mAP@0.5: 0.0121
+
+  ✓ Best model saved: 0.0121
+
+Epoch 11/100
+  Batch 50/697, Loss: 0.7209
+  Batch 100/697, Loss: 0.8494
+  Batch 150/697, Loss: 0.9897
+  Batch 200/697, Loss: 0.6234
+  Batch 250/697, Loss: 0.6861
+  Batch 300/697, Loss: 0.7825
+  Batch 350/697, Loss: 0.5397
+  Batch 400/697, Loss: 0.8086
+  Batch 450/697, Loss: 0.8864
+  Batch 500/697, Loss: 0.6439
+  Batch 550/697, Loss: 0.8529
+  Batch 600/697, Loss: 0.6393
+  Batch 650/697, Loss: 0.8240
+  Avg Loss: 0.7449
+
+Epoch 12/100
+  Batch 50/697, Loss: 0.7590
+  Batch 100/697, Loss: 0.6538
+  Batch 150/697, Loss: 1.0586
+  Batch 200/697, Loss: 0.6857
+  Batch 250/697, Loss: 0.7752
+  Batch 300/697, Loss: 0.6507
+  Batch 350/697, Loss: 0.9722
+  Batch 400/697, Loss: 0.7847
+  Batch 450/697, Loss: 0.6893
+  Batch 500/697, Loss: 0.7283
+  Batch 550/697, Loss: 0.7524
+  Batch 600/697, Loss: 0.5940
+  Batch 650/697, Loss: 0.7839
+  Avg Loss: 0.7246
+
+Epoch 13/100
+  Batch 50/697, Loss: 0.8683
+  Batch 100/697, Loss: 0.7136
+  Batch 150/697, Loss: 0.7225
+  Batch 200/697, Loss: 0.9004
+  Batch 250/697, Loss: 0.7242
+  Batch 300/697, Loss: 0.5555
+  Batch 350/697, Loss: 0.6965
+  Batch 400/697, Loss: 0.6136
+  Batch 450/697, Loss: 0.6045
+  Batch 500/697, Loss: 0.6927
+  Batch 550/697, Loss: 0.7497
+  Batch 600/697, Loss: 0.5193
+  Batch 650/697, Loss: 0.6287
+  Avg Loss: 0.7045
+
+Epoch 14/100
+  Batch 50/697, Loss: 0.7802
+  Batch 100/697, Loss: 0.4799
+  Batch 150/697, Loss: 0.5512
+  Batch 200/697, Loss: 0.6427
+  Batch 250/697, Loss: 0.8253
+  Batch 300/697, Loss: 0.5222
+  Batch 350/697, Loss: 0.6779
+  Batch 400/697, Loss: 0.4971
+  Batch 450/697, Loss: 0.5195
+  Batch 500/697, Loss: 0.7236
+  Batch 550/697, Loss: 0.4316
+  Batch 600/697, Loss: 0.7444
+  Batch 650/697, Loss: 0.5611
+  Avg Loss: 0.6893
+
+Epoch 15/100
+  Batch 50/697, Loss: 0.5435
+  Batch 100/697, Loss: 0.6452
+  Batch 150/697, Loss: 1.0496
+  Batch 200/697, Loss: 0.7831
+  Batch 250/697, Loss: 0.4516
+  Batch 300/697, Loss: 0.5985
+  Batch 350/697, Loss: 0.5947
+  Batch 400/697, Loss: 0.5951
+  Batch 450/697, Loss: 0.7979
+  Batch 500/697, Loss: 0.6483
+  Batch 550/697, Loss: 0.6874
+  Batch 600/697, Loss: 0.7228
+  Batch 650/697, Loss: 0.5882
+  Avg Loss: 0.6711
+
+Epoch 16/100
+  Batch 50/697, Loss: 0.6095
+  Batch 100/697, Loss: 0.3951
+  Batch 150/697, Loss: 0.8701
+  Batch 200/697, Loss: 0.4477
+  Batch 250/697, Loss: 0.6956
+  Batch 300/697, Loss: 0.4912
+  Batch 350/697, Loss: 0.6889
+  Batch 400/697, Loss: 0.5835
+  Batch 450/697, Loss: 0.5107
+  Batch 500/697, Loss: 0.5784
+  Batch 550/697, Loss: 0.6960
+  Batch 600/697, Loss: 0.7811
+  Batch 650/697, Loss: 0.5053
+  Avg Loss: 0.6533
+
+Epoch 17/100
+  Batch 50/697, Loss: 0.4967
+  Batch 100/697, Loss: 0.8282
+  Batch 150/697, Loss: 0.6104
+  Batch 200/697, Loss: 0.9904
+  Batch 250/697, Loss: 0.7692
+  Batch 300/697, Loss: 0.7573
+  Batch 350/697, Loss: 0.5026
+  Batch 400/697, Loss: 0.7003
+  Batch 450/697, Loss: 0.9430
+  Batch 500/697, Loss: 0.5916
+  Batch 550/697, Loss: 0.7199
+  Batch 600/697, Loss: 0.5105
+  Batch 650/697, Loss: 0.7695
+  Avg Loss: 0.6428
+
+Epoch 18/100
+  Batch 50/697, Loss: 0.6221
+  Batch 100/697, Loss: 0.9843
+  Batch 150/697, Loss: 0.6131
+  Batch 200/697, Loss: 0.6672
+  Batch 250/697, Loss: 0.2623
+  Batch 300/697, Loss: 0.5541
+  Batch 350/697, Loss: 0.8214
+  Batch 400/697, Loss: 0.5510
+  Batch 450/697, Loss: 0.7955
+  Batch 500/697, Loss: 0.6025
+  Batch 550/697, Loss: 0.4391
+  Batch 600/697, Loss: 0.4592
+  Batch 650/697, Loss: 0.7131
+  Avg Loss: 0.6268
+
+Epoch 19/100
+  Batch 50/697, Loss: 0.8041
+  Batch 100/697, Loss: 0.7428
+  Batch 150/697, Loss: 0.5136
+  Batch 200/697, Loss: 0.5001
+  Batch 250/697, Loss: 0.4634
+  Batch 300/697, Loss: 0.7816
+  Batch 350/697, Loss: 0.6992
+  Batch 400/697, Loss: 0.9404
+  Batch 450/697, Loss: 0.5471
+  Batch 500/697, Loss: 0.6422
+  Batch 550/697, Loss: 0.7612
+  Batch 600/697, Loss: 0.5530
+  Batch 650/697, Loss: 0.6196
+  Avg Loss: 0.6095
+
+Epoch 20/100
+  Batch 50/697, Loss: 0.5232
+  Batch 100/697, Loss: 0.6656
+  Batch 150/697, Loss: 0.5177
+  Batch 200/697, Loss: 0.4936
+  Batch 250/697, Loss: 0.5428
+  Batch 300/697, Loss: 0.6157
+  Batch 350/697, Loss: 0.8077
+  Batch 400/697, Loss: 0.6294
+  Batch 450/697, Loss: 0.6543
+  Batch 500/697, Loss: 0.7215
+  Batch 550/697, Loss: 0.4991
+  Batch 600/697, Loss: 0.4553
+  Batch 650/697, Loss: 0.4293
+  Avg Loss: 0.5934
+
+  Validating...
+  Running inference...
+
+  Per-Class Performance (AP > 0.1):
+    Clear plastic bottle: AP=0.152 (P=0.50, R=0.30)
+    Drink can           : AP=0.223 (P=0.72, R=0.31)
+    Paper cup           : AP=0.125 (P=0.50, R=0.25)
+    Plastic film        : AP=0.104 (P=0.62, R=0.17)
+
+  mAP@0.5: 0.0534
+
+  ✓ Best model saved: 0.0534
+
+Epoch 21/100
+  Batch 50/697, Loss: 0.7335
+  Batch 100/697, Loss: 0.5030
+  Batch 150/697, Loss: 0.4789
+  Batch 200/697, Loss: 0.8542
+  Batch 250/697, Loss: 0.6391
+  Batch 300/697, Loss: 0.4626
+  Batch 350/697, Loss: 0.7238
+  Batch 400/697, Loss: 0.4247
+  Batch 450/697, Loss: 0.5917
+  Batch 500/697, Loss: 0.6461
+  Batch 550/697, Loss: 0.7830
+  Batch 600/697, Loss: 0.6045
+  Batch 650/697, Loss: 0.6429
+  Avg Loss: 0.5785
+
+Epoch 22/100
+  Batch 50/697, Loss: 0.6584
+  Batch 100/697, Loss: 0.3793
+  Batch 150/697, Loss: 0.5882
+  Batch 200/697, Loss: 0.6637
+  Batch 250/697, Loss: 0.9709
+  Batch 300/697, Loss: 0.6572
+  Batch 350/697, Loss: 0.3769
+  Batch 400/697, Loss: 0.4810
+  Batch 450/697, Loss: 0.3938
+  Batch 500/697, Loss: 0.4984
+  Batch 550/697, Loss: 0.6521
+  Batch 600/697, Loss: 0.8203
+  Batch 650/697, Loss: 0.6841
+  Avg Loss: 0.5685
+
+Epoch 23/100
+  Batch 50/697, Loss: 0.5001
+  Batch 100/697, Loss: 0.7245
+  Batch 150/697, Loss: 0.2849
+  Batch 200/697, Loss: 0.6125
+  Batch 250/697, Loss: 0.3149
+  Batch 300/697, Loss: 0.9189
+  Batch 350/697, Loss: 0.4838
+  Batch 400/697, Loss: 0.6240
+  Batch 450/697, Loss: 0.7715
+  Batch 500/697, Loss: 0.4952
+  Batch 550/697, Loss: 0.5213
+  Batch 600/697, Loss: 0.6373
+  Batch 650/697, Loss: 0.9255
+  Avg Loss: 0.5523
+
+Epoch 24/100
+  Batch 50/697, Loss: 0.6908
+  Batch 100/697, Loss: 0.5811
+  Batch 150/697, Loss: 0.5298
+  Batch 200/697, Loss: 0.5341
+  Batch 250/697, Loss: 0.6812
+  Batch 300/697, Loss: 0.5375
+  Batch 350/697, Loss: 0.5068
+  Batch 400/697, Loss: 0.7074
+  Batch 450/697, Loss: 0.5851
+  Batch 500/697, Loss: 0.4631
+  Batch 550/697, Loss: 0.5672
+  Batch 600/697, Loss: 1.0773
+  Batch 650/697, Loss: 0.5453
+  Avg Loss: 0.5386
+
+Epoch 25/100
+  Batch 50/697, Loss: 0.5377
+  Batch 100/697, Loss: 0.6042
+  Batch 150/697, Loss: 0.5796
+  Batch 200/697, Loss: 0.5731
+  Batch 250/697, Loss: 0.5068
+  Batch 300/697, Loss: 0.3778
+  Batch 350/697, Loss: 0.6309
+  Batch 400/697, Loss: 0.6265
+  Batch 450/697, Loss: 0.4695
+  Batch 500/697, Loss: 0.3620
+  Batch 550/697, Loss: 0.4890
+  Batch 600/697, Loss: 0.6487
+  Batch 650/697, Loss: 0.3304
+  Avg Loss: 0.5258
+
+Epoch 26/100
+  Batch 50/697, Loss: 0.5499
+  Batch 100/697, Loss: 0.6104
+  Batch 150/697, Loss: 0.4193
+  Batch 200/697, Loss: 0.3696
+  Batch 250/697, Loss: 0.5144
+  Batch 300/697, Loss: 0.5728
+  Batch 350/697, Loss: 0.4491
+  Batch 400/697, Loss: 0.5631
+  Batch 450/697, Loss: 0.5818
+  Batch 500/697, Loss: 0.6719
+  Batch 550/697, Loss: 0.6476
+  Batch 600/697, Loss: 0.6122
+  Batch 650/697, Loss: 0.3768
+  Avg Loss: 0.5140
+
+Epoch 27/100
+  Batch 50/697, Loss: 0.7433
+  Batch 100/697, Loss: 0.2836
+  Batch 150/697, Loss: 0.4455
+  Batch 200/697, Loss: 0.3664
+  Batch 250/697, Loss: 0.4510
+  Batch 300/697, Loss: 0.6122
+  Batch 350/697, Loss: 0.6773
+  Batch 400/697, Loss: 0.7869
+  Batch 450/697, Loss: 0.5211
+  Batch 500/697, Loss: 0.4475
+  Batch 550/697, Loss: 0.6309
+  Batch 600/697, Loss: 0.5225
+  Batch 650/697, Loss: 0.4901
+  Avg Loss: 0.5016
+
+Epoch 28/100
+  Batch 50/697, Loss: 0.5311
+  Batch 100/697, Loss: 0.4475
+  Batch 150/697, Loss: 0.4034
+  Batch 200/697, Loss: 0.6753
+  Batch 250/697, Loss: 0.4379
+  Batch 300/697, Loss: 0.5779
+  Batch 350/697, Loss: 0.4296
+  Batch 400/697, Loss: 0.4485
+  Batch 450/697, Loss: 0.6340
+  Batch 500/697, Loss: 0.3771
+  Batch 550/697, Loss: 0.7265
+  Batch 600/697, Loss: 0.5443
+  Batch 650/697, Loss: 0.5267
+  Avg Loss: 0.4901
+
+Epoch 29/100
+  Batch 50/697, Loss: 0.3452
+  Batch 100/697, Loss: 0.3085
+  Batch 150/697, Loss: 0.6256
+  Batch 200/697, Loss: 0.5457
+  Batch 250/697, Loss: 0.5322
+  Batch 300/697, Loss: 0.6600
+  Batch 350/697, Loss: 0.7303
+  Batch 400/697, Loss: 0.4861
+  Batch 450/697, Loss: 0.2003
+  Batch 500/697, Loss: 0.3834
+  Batch 550/697, Loss: 0.4248
+  Batch 600/697, Loss: 0.4200
+  Batch 650/697, Loss: 0.3326
+  Avg Loss: 0.4762
+
+Epoch 30/100
+  Batch 50/697, Loss: 0.5533
+  Batch 100/697, Loss: 0.4338
+  Batch 150/697, Loss: 0.4849
+  Batch 200/697, Loss: 0.4058
+  Batch 250/697, Loss: 0.7176
+  Batch 300/697, Loss: 0.4944
+  Batch 350/697, Loss: 0.4432
+  Batch 400/697, Loss: 0.4837
+  Batch 450/697, Loss: 0.3701
+  Batch 500/697, Loss: 0.3438
+  Batch 550/697, Loss: 0.4732
+  Batch 600/697, Loss: 0.6851
+  Batch 650/697, Loss: 0.4966
+  Avg Loss: 0.4657
+
+  Validating...
+  Running inference...
+
+  Per-Class Performance (AP > 0.1):
+    Clear plastic bottle: AP=0.252 (P=0.62, R=0.41)
+    Crisp packet        : AP=0.208 (P=0.50, R=0.42)
+    Drink can           : AP=0.389 (P=0.60, R=0.65)
+    Other plastic contai: AP=0.103 (P=0.67, R=0.15)
+    Paper cup           : AP=0.298 (P=0.71, R=0.42)
+    Plastic bottle cap  : AP=0.138 (P=0.69, R=0.20)
+    Plastic film        : AP=0.132 (P=0.48, R=0.28)
+    Plastic straw       : AP=0.108 (P=0.54, R=0.20)
+
+  mAP@0.5: 0.1052
+
+  ✓ Best model saved: 0.1052
+
+Epoch 31/100
+  Batch 50/697, Loss: 0.6705
+  Batch 100/697, Loss: 0.4315
+  Batch 150/697, Loss: 0.3387
+  Batch 200/697, Loss: 0.4230
+  Batch 250/697, Loss: 0.3129
+  Batch 300/697, Loss: 0.4868
+  Batch 350/697, Loss: 0.7915
+  Batch 400/697, Loss: 0.6399
+  Batch 450/697, Loss: 0.3263
+  Batch 500/697, Loss: 0.3460
+  Batch 550/697, Loss: 0.3404
+  Batch 600/697, Loss: 0.5133
+  Batch 650/697, Loss: 0.4522
+  Avg Loss: 0.4400
+
+Epoch 32/100
+  Batch 50/697, Loss: 0.4983
+  Batch 100/697, Loss: 0.3932
+  Batch 150/697, Loss: 0.3903
+  Batch 200/697, Loss: 0.5450
+  Batch 250/697, Loss: 0.4159
+  Batch 300/697, Loss: 0.5583
+  Batch 350/697, Loss: 0.5182
+  Batch 400/697, Loss: 0.6093
+  Batch 450/697, Loss: 0.2632
+  Batch 500/697, Loss: 0.6553
+  Batch 550/697, Loss: 0.4099
+  Batch 600/697, Loss: 0.3223
+  Batch 650/697, Loss: 0.5950
+  Avg Loss: 0.4354
+
+Epoch 33/100
+  Batch 50/697, Loss: 0.4189
+  Batch 100/697, Loss: 0.3409
+  Batch 150/697, Loss: 0.3554
+  Batch 200/697, Loss: 0.3582
+  Batch 250/697, Loss: 0.5055
+  Batch 300/697, Loss: 0.2470
+  Batch 350/697, Loss: 0.4435
+  Batch 400/697, Loss: 0.6848
+  Batch 450/697, Loss: 0.2995
+  Batch 500/697, Loss: 0.4442
+  Batch 550/697, Loss: 0.4370
+  Batch 600/697, Loss: 0.5423
+  Batch 650/697, Loss: 0.4977
+  Avg Loss: 0.4333
+
+Epoch 34/100
+  Batch 50/697, Loss: 0.2643
+  Batch 100/697, Loss: 0.2355
+  Batch 150/697, Loss: 0.3382
+  Batch 200/697, Loss: 0.3868
+  Batch 250/697, Loss: 0.5571
+  Batch 300/697, Loss: 0.3629
+  Batch 350/697, Loss: 0.3630
+  Batch 400/697, Loss: 0.4138
+  Batch 450/697, Loss: 0.4315
+  Batch 500/697, Loss: 0.4056
+  Batch 550/697, Loss: 0.6154
+  Batch 600/697, Loss: 0.3113
+  Batch 650/697, Loss: 0.2959
+  Avg Loss: 0.4328
+
+Epoch 35/100
+  Batch 50/697, Loss: 0.3926
+  Batch 100/697, Loss: 0.4875
+  Batch 150/697, Loss: 0.4339
+  Batch 200/697, Loss: 0.2817
+  Batch 250/697, Loss: 0.5360
+  Batch 300/697, Loss: 0.3571
+  Batch 350/697, Loss: 0.2824
+  Batch 400/697, Loss: 0.2537
+  Batch 450/697, Loss: 0.3651
+  Batch 500/697, Loss: 0.3946
+  Batch 550/697, Loss: 0.2761
+  Batch 600/697, Loss: 0.2503
+  Batch 650/697, Loss: 0.3282
+  Avg Loss: 0.4314
+
+Epoch 36/100
+  Batch 50/697, Loss: 0.4218
+  Batch 100/697, Loss: 0.2773
+  Batch 150/697, Loss: 0.3580
+  Batch 200/697, Loss: 0.6012
+  Batch 250/697, Loss: 0.3375
+  Batch 300/697, Loss: 0.5230
+  Batch 350/697, Loss: 0.5322
+  Batch 400/697, Loss: 0.5147
+  Batch 450/697, Loss: 0.5087
+  Batch 500/697, Loss: 0.3582
+  Batch 550/697, Loss: 0.5330
+  Batch 600/697, Loss: 0.5251
+  Batch 650/697, Loss: 0.2682
+  Avg Loss: 0.4282
+
+Epoch 37/100
+  Batch 50/697, Loss: 0.2785
+  Batch 100/697, Loss: 0.4129
+  Batch 150/697, Loss: 0.4310
+  Batch 200/697, Loss: 0.4608
+  Batch 250/697, Loss: 0.8809
+  Batch 300/697, Loss: 0.5372
+  Batch 350/697, Loss: 0.3659
+  Batch 400/697, Loss: 0.3416
+  Batch 450/697, Loss: 0.2010
+  Batch 500/697, Loss: 0.2766
+  Batch 550/697, Loss: 0.4828
+  Batch 600/697, Loss: 0.4010
+  Batch 650/697, Loss: 0.3212
+  Avg Loss: 0.4273
+
+Epoch 38/100
+  Batch 50/697, Loss: 0.6058
+  Batch 100/697, Loss: 0.4536
+  Batch 150/697, Loss: 0.2828
+  Batch 200/697, Loss: 0.3318
+  Batch 250/697, Loss: 0.6230
+  Batch 300/697, Loss: 0.4625
+  Batch 350/697, Loss: 0.4750
+  Batch 400/697, Loss: 0.3754
+  Batch 450/697, Loss: 0.2917
+  Batch 500/697, Loss: 0.3228
+  Batch 550/697, Loss: 0.5440
+  Batch 600/697, Loss: 0.2558
+  Batch 650/697, Loss: 0.3785
+  Avg Loss: 0.4262
+
+Epoch 39/100
+  Batch 50/697, Loss: 0.2846
+  Batch 100/697, Loss: 0.2413
+  Batch 150/697, Loss: 0.2976
+  Batch 200/697, Loss: 0.6445
+  Batch 250/697, Loss: 0.4033
+  Batch 300/697, Loss: 0.4620
+  Batch 350/697, Loss: 0.5788
+  Batch 400/697, Loss: 0.3821
+  Batch 450/697, Loss: 0.3393
+  Batch 500/697, Loss: 0.3700
+  Batch 550/697, Loss: 0.4811
+  Batch 600/697, Loss: 0.3624
+  Batch 650/697, Loss: 0.4227
+  Avg Loss: 0.4243
+
+Epoch 40/100
+  Batch 50/697, Loss: 0.3010
+  Batch 100/697, Loss: 0.3405
+  Batch 150/697, Loss: 0.5584
+  Batch 200/697, Loss: 0.3175
+  Batch 250/697, Loss: 0.5604
+  Batch 300/697, Loss: 0.3885
+  Batch 350/697, Loss: 0.6372
+  Batch 400/697, Loss: 0.4766
+  Batch 450/697, Loss: 0.2263
+  Batch 500/697, Loss: 0.5719
+  Batch 550/697, Loss: 0.4070
+  Batch 600/697, Loss: 0.5512
+  Batch 650/697, Loss: 0.4876
+  Avg Loss: 0.4217
+
+  Validating...
+  Running inference...
+
+  Per-Class Performance (AP > 0.1):
+    Clear plastic bottle: AP=0.222 (P=0.53, R=0.42)
+    Crisp packet        : AP=0.190 (P=0.57, R=0.33)
+    Drink can           : AP=0.351 (P=0.62, R=0.57)
+    Other carton        : AP=0.154 (P=0.67, R=0.23)
+    Other plastic contai: AP=0.154 (P=1.00, R=0.15)
+    Paper cup           : AP=0.298 (P=0.71, R=0.42)
+    Plastic bottle cap  : AP=0.129 (P=0.65, R=0.20)
+    Plastic film        : AP=0.125 (P=0.48, R=0.26)
+    Plastic straw       : AP=0.131 (P=0.57, R=0.23)
+    Plastic utensils    : AP=0.143 (P=1.00, R=0.14)
+
+  mAP@0.5: 0.0863
+
+
+Epoch 41/100
+  Batch 50/697, Loss: 0.4949
+  Batch 100/697, Loss: 0.2465
+  Batch 150/697, Loss: 0.6657
+  Batch 200/697, Loss: 0.3469
+  Batch 250/697, Loss: 0.3817
+  Batch 300/697, Loss: 0.5793
+  Batch 350/697, Loss: 0.4302
+  Batch 400/697, Loss: 0.7311
+  Batch 450/697, Loss: 0.4411
+  Batch 500/697, Loss: 0.2772
+  Batch 550/697, Loss: 0.2705
+  Batch 600/697, Loss: 0.5681
+  Batch 650/697, Loss: 0.3278
+  Avg Loss: 0.4196
+
+Epoch 42/100
+  Batch 50/697, Loss: 0.5439
+  Batch 100/697, Loss: 0.6016
+  Batch 150/697, Loss: 0.3849
+  Batch 200/697, Loss: 0.4586
+  Batch 250/697, Loss: 0.3814
+  Batch 300/697, Loss: 0.4063
+  Batch 350/697, Loss: 0.4003
+  Batch 400/697, Loss: 0.5205
+  Batch 450/697, Loss: 0.3208
+  Batch 500/697, Loss: 0.3982
+  Batch 550/697, Loss: 0.2388
+  Batch 600/697, Loss: 0.6605
+  Batch 650/697, Loss: 0.4845
+  Avg Loss: 0.4205
+
+Epoch 43/100
+  Batch 50/697, Loss: 0.6053
+  Batch 100/697, Loss: 0.4804
+  Batch 150/697, Loss: 0.3931
+  Batch 200/697, Loss: 0.3137
+  Batch 250/697, Loss: 0.4527
+  Batch 300/697, Loss: 0.3943
+  Batch 350/697, Loss: 0.2144
+  Batch 400/697, Loss: 0.3777
+  Batch 450/697, Loss: 0.3197
+  Batch 500/697, Loss: 0.3207
+  Batch 550/697, Loss: 0.2400
+  Batch 600/697, Loss: 0.3692
+  Batch 650/697, Loss: 0.6113
+  Avg Loss: 0.4196
+
+Epoch 44/100
+  Batch 50/697, Loss: 0.4346
+  Batch 100/697, Loss: 0.4386
+  Batch 150/697, Loss: 0.3873
+  Batch 200/697, Loss: 0.4495
+  Batch 250/697, Loss: 0.3437
+  Batch 300/697, Loss: 0.1932
+  Batch 350/697, Loss: 0.4197
+  Batch 400/697, Loss: 0.3551
+  Batch 450/697, Loss: 0.3629
+  Batch 500/697, Loss: 0.2084
+  Batch 550/697, Loss: 0.4672
+  Batch 600/697, Loss: 0.4480
+  Batch 650/697, Loss: 0.7197
+  Avg Loss: 0.4193
+
+Epoch 45/100
+  Batch 50/697, Loss: 0.6534
+  Batch 100/697, Loss: 0.2353
+  Batch 150/697, Loss: 0.5387
+  Batch 200/697, Loss: 0.4834
+  Batch 250/697, Loss: 0.4410
+  Batch 300/697, Loss: 0.3075
+  Batch 350/697, Loss: 0.3471
+  Batch 400/697, Loss: 0.4923
+  Batch 450/697, Loss: 0.4350
+  Batch 500/697, Loss: 0.3819
+  Batch 550/697, Loss: 0.4867
+  Batch 600/697, Loss: 0.3014
+  Batch 650/697, Loss: 0.4974
+  Avg Loss: 0.4177
+
+Epoch 46/100
+  Batch 50/697, Loss: 0.5633
+  Batch 100/697, Loss: 0.3158
+  Batch 150/697, Loss: 0.4312
+  Batch 200/697, Loss: 0.3815
+  Batch 250/697, Loss: 0.4215
+  Batch 300/697, Loss: 0.4002
+  Batch 350/697, Loss: 0.4642
+  Batch 400/697, Loss: 0.2756
+  Batch 450/697, Loss: 0.5841
+  Batch 500/697, Loss: 0.5884
+  Batch 550/697, Loss: 0.4035
+  Batch 600/697, Loss: 0.3600
+  Batch 650/697, Loss: 0.4991
+  Avg Loss: 0.4143
+
+Epoch 47/100
+  Batch 50/697, Loss: 0.3951
+  Batch 100/697, Loss: 0.7368
+  Batch 150/697, Loss: 0.2961
+  Batch 200/697, Loss: 0.3741
+  Batch 250/697, Loss: 0.5393
+  Batch 300/697, Loss: 0.3479
+  Batch 350/697, Loss: 0.3148
+  Batch 400/697, Loss: 0.3177
+  Batch 450/697, Loss: 0.2519
+  Batch 500/697, Loss: 0.3377
+  Batch 550/697, Loss: 0.4176
+  Batch 600/697, Loss: 0.5447
+  Batch 650/697, Loss: 0.3917
+  Avg Loss: 0.4118
+
+Epoch 48/100
+  Batch 50/697, Loss: 0.5543
+  Batch 100/697, Loss: 0.3060
+  Batch 150/697, Loss: 0.4107
+  Batch 200/697, Loss: 0.4253
+  Batch 250/697, Loss: 0.2223
+  Batch 300/697, Loss: 0.1638
+  Batch 350/697, Loss: 0.4508
+  Batch 400/697, Loss: 0.3175
+  Batch 450/697, Loss: 0.5279
+  Batch 500/697, Loss: 0.2640
+  Batch 550/697, Loss: 0.3858
+  Batch 600/697, Loss: 0.5499
+  Batch 650/697, Loss: 0.3664
+  Avg Loss: 0.4115
+
+Epoch 49/100
+  Batch 50/697, Loss: 0.2643
+  Batch 100/697, Loss: 0.2918
+  Batch 150/697, Loss: 0.3378
+  Batch 200/697, Loss: 0.5098
+  Batch 250/697, Loss: 0.2939
+  Batch 300/697, Loss: 0.3848
+  Batch 350/697, Loss: 0.2746
+  Batch 400/697, Loss: 0.3188
+  Batch 450/697, Loss: 0.3566
+  Batch 500/697, Loss: 0.4412
+  Batch 550/697, Loss: 0.3860
+  Batch 600/697, Loss: 0.4215
+  Batch 650/697, Loss: 0.3694
+  Avg Loss: 0.4109
+
+Epoch 50/100
+  Batch 50/697, Loss: 0.5311
+  Batch 100/697, Loss: 0.3759
+  Batch 150/697, Loss: 0.6709
+  Batch 200/697, Loss: 0.6008
+  Batch 250/697, Loss: 0.6205
+  Batch 300/697, Loss: 0.4666
+  Batch 350/697, Loss: 0.6012
+  Batch 400/697, Loss: 0.3316
+  Batch 450/697, Loss: 0.4753
+  Batch 500/697, Loss: 0.3561
+  Batch 550/697, Loss: 0.5438
+  Batch 600/697, Loss: 0.7446
+  Batch 650/697, Loss: 0.3242
+  Avg Loss: 0.4076
+
+  Validating...
+  Running inference...
+
+  Per-Class Performance (AP > 0.1):
+    Clear plastic bottle: AP=0.214 (P=0.51, R=0.42)
+    Crisp packet        : AP=0.139 (P=0.33, R=0.42)
+    Drink can           : AP=0.362 (P=0.62, R=0.58)
+    Metal bottle cap    : AP=0.156 (P=0.62, R=0.25)
+    Other carton        : AP=0.135 (P=0.50, R=0.27)
+    Paper cup           : AP=0.347 (P=0.83, R=0.42)
+    Plastic bottle cap  : AP=0.125 (P=0.57, R=0.22)
+    Plastic film        : AP=0.140 (P=0.49, R=0.28)
+
+  mAP@0.5: 0.0844
+
+
+Early stopping at epoch 50
+
+============================================================
+Final Evaluation
+============================================================
+  Running inference...
+
+  Per-Class Performance (AP > 0.1):
+    Clear plastic bottle: AP=0.214 (P=0.51, R=0.42)
+    Crisp packet        : AP=0.139 (P=0.33, R=0.42)
+    Drink can           : AP=0.362 (P=0.62, R=0.58)
+    Metal bottle cap    : AP=0.156 (P=0.62, R=0.25)
+    Other carton        : AP=0.135 (P=0.50, R=0.27)
+    Paper cup           : AP=0.347 (P=0.83, R=0.42)
+    Plastic bottle cap  : AP=0.125 (P=0.57, R=0.22)
+    Plastic film        : AP=0.140 (P=0.49, R=0.28)
+
+============================================================
+RetinaNet Training Complete
+============================================================
+
+Best mAP@0.5:  0.1052
+Final mAP@0.5: 0.0844
+
+============================================================
+Model Comparison
+============================================================
+YOLOv8m:        mAP@0.5 = 0.4720
+Faster R-CNN:   mAP@0.5 = 0.2712
+RetinaNet:      mAP@0.5 = 0.1052
+
+
